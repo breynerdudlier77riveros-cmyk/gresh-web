@@ -292,6 +292,17 @@ body {
   margin-bottom: 2rem;
 }
 
+.about-subtitle {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--neon-dim);
+  margin-bottom: 1.8rem;
+  border-left: 2px solid var(--neon);
+  padding-left: 0.8rem;
+}
+
 .about-bio {
   color: var(--text-muted);
   font-size: 0.95rem;
