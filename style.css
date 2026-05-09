@@ -345,6 +345,97 @@ body {
 }
 
 /* =========================================
+   GALLERY DE ACCIÓN
+   ========================================= */
+.gallery-action {
+  margin: 2rem 0;
+}
+
+.gallery-label {
+  margin-bottom: 0.8rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.gallery-item {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid var(--neon-dim);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  border-color: var(--neon);
+  box-shadow: 0 0 18px var(--neon-glow);
+}
+
+.gallery-img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  filter: grayscale(10%) contrast(1.05);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
+  filter: grayscale(0%) contrast(1.1);
+}
+
+/* =========================================
+   IMAGEN COMPETENCIA
+   ========================================= */
+.about-competition-img {
+  position: relative;
+  margin: 2rem 0;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid var(--neon-dim);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-competition-img:hover {
+  border-color: var(--neon);
+  box-shadow: 0 0 25px var(--neon-glow);
+}
+
+.competition-img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 14px;
+  filter: grayscale(10%) contrast(1.05);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.competition-img:hover {
+  transform: scale(1.02);
+  filter: grayscale(0%) contrast(1.1);
+}
+
+.img-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(transparent, rgba(7, 7, 7, 0.9));
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--neon);
+}
+
+/* =========================================
    FOOTER
    ========================================= */
 .footer {
@@ -432,6 +523,18 @@ body {
   .about-stats {
     flex-wrap: wrap;
     gap: 1.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-img {
+    height: 220px;
+  }
+
+  .competition-img {
+    height: 240px;
   }
 
   .hero-bg-text {
