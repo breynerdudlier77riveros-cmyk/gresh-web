@@ -345,70 +345,44 @@ body {
 }
 
 /* =========================================
-   GALLERY DE ACCIÓN
+   FOTOS ENTRE PÁRRAFOS
    ========================================= */
-.gallery-action {
-  margin: 2rem 0;
-}
-
-.gallery-label {
-  margin-bottom: 0.8rem;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.8rem;
-}
-
-.gallery-item {
+.bio-img-block {
+  position: relative;
+  margin: 1.8rem 0;
   border-radius: 15px;
   overflow: hidden;
   border: 1px solid var(--neon-dim);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-item:hover {
+.bio-img-block:hover {
   border-color: var(--neon);
-  box-shadow: 0 0 18px var(--neon-glow);
+  box-shadow: 0 0 22px var(--neon-glow);
 }
 
-.gallery-img {
+/* Landscape: para fotos 16:9 o similares (entrenamiento) */
+.bio-img--landscape {
   display: block;
   width: 100%;
-  height: 260px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 14px;
   filter: grayscale(10%) contrast(1.05);
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.gallery-img:hover {
-  transform: scale(1.03);
-  filter: grayscale(0%) contrast(1.1);
+/* Portrait: para fotos 9:16 (competencia), centrada y con ancho limitado */
+.bio-img-block--portrait {
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* =========================================
-   IMAGEN COMPETENCIA
-   ========================================= */
-.about-competition-img {
-  position: relative;
-  margin: 2rem 0;
-  border-radius: 15px;
-  overflow: hidden;
-  border: 1px solid var(--neon-dim);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-competition-img:hover {
-  border-color: var(--neon);
-  box-shadow: 0 0 25px var(--neon-glow);
-}
-
-.competition-img {
+.bio-img--portrait {
   display: block;
   width: 100%;
-  height: 320px;
+  aspect-ratio: 9 / 16;
   object-fit: cover;
   object-position: center top;
   border-radius: 14px;
@@ -416,7 +390,8 @@ body {
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.competition-img:hover {
+.bio-img--landscape:hover,
+.bio-img--portrait:hover {
   transform: scale(1.02);
   filter: grayscale(0%) contrast(1.1);
 }
@@ -427,7 +402,7 @@ body {
   left: 0;
   right: 0;
   padding: 0.6rem 1rem;
-  background: linear-gradient(transparent, rgba(7, 7, 7, 0.9));
+  background: linear-gradient(transparent, rgba(7, 7, 7, 0.92));
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -525,16 +500,8 @@ body {
     gap: 1.5rem;
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-img {
-    height: 220px;
-  }
-
-  .competition-img {
-    height: 240px;
+  .bio-img-block--portrait {
+    max-width: 100%;
   }
 
   .hero-bg-text {
