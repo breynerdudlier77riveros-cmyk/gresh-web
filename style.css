@@ -1,0 +1,433 @@
+/* =========================================
+   GRESH — Premium Calisthenics Brand
+   ========================================= */
+
+/* --- RESET & BASE --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:           #070707;
+  --bg-surface:   #0f0f0f;
+  --bg-card:      #141414;
+  --neon:         #39FF14;
+  --neon-dim:     #1a7a09;
+  --neon-glow:    rgba(57, 255, 20, 0.35);
+  --text:         #f5f5f5;
+  --text-muted:   #8a8a8a;
+  --border:       rgba(57, 255, 20, 0.2);
+  --font:         'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* --- UTILITY --- */
+.accent {
+  color: var(--neon);
+  text-shadow: 0 0 8px var(--neon-glow), 0 0 20px var(--neon-glow);
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 6%;
+  background: rgba(7, 7, 7, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: var(--neon);
+  text-decoration: none;
+  text-shadow: 0 0 10px var(--neon-glow), 0 0 30px var(--neon-glow);
+  transition: text-shadow 0.3s ease;
+}
+
+.logo:hover {
+  text-shadow: 0 0 16px var(--neon), 0 0 50px var(--neon-glow);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+.btn-nav {
+  padding: 0.5rem 1.4rem;
+  border: 1px solid var(--neon);
+  border-radius: 2px;
+  color: var(--neon) !important;
+  transition: background 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.btn-nav:hover {
+  background: var(--neon);
+  color: var(--bg) !important;
+  box-shadow: 0 0 20px var(--neon-glow);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--neon);
+  font-size: 1.4rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* =========================================
+   HERO
+   ========================================= */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 70% 50%, rgba(57, 255, 20, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--neon);
+  border: 1px solid var(--border);
+  padding: 0.35rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 1px;
+}
+
+.hero-title {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.9rem 2.6rem;
+  background: var(--neon);
+  color: var(--bg);
+  font-family: var(--font);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 20px var(--neon-glow);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 35px var(--neon), 0 0 70px var(--neon-glow);
+  transform: translateY(-2px);
+}
+
+.hero-bg-text {
+  position: absolute;
+  right: -2%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(8rem, 22vw, 20rem);
+  font-weight: 900;
+  letter-spacing: -10px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(57, 255, 20, 0.06);
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+  line-height: 1;
+}
+
+/* =========================================
+   ABOUT
+   ========================================= */
+.about {
+  padding: 6rem 6%;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* Image side */
+.about-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-frame {
+  position: relative;
+  z-index: 2;
+  border: 1px solid var(--neon);
+  border-radius: 4px;
+  box-shadow:
+    0 0 20px var(--neon-glow),
+    0 0 60px rgba(57, 255, 20, 0.12),
+    inset 0 0 30px rgba(57, 255, 20, 0.03);
+  overflow: hidden;
+  max-width: 420px;
+  width: 100%;
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  filter: grayscale(20%) contrast(1.05);
+  transition: filter 0.4s ease;
+}
+
+.about-image:hover {
+  filter: grayscale(0%) contrast(1.1);
+}
+
+.about-image-glow {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 60px;
+  background: var(--neon);
+  filter: blur(40px);
+  opacity: 0.15;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Text side */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--neon);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+}
+
+.about-bio {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Stats */
+.about-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.stat-plus {
+  font-size: 1.2rem;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+  padding: 2.5rem 6%;
+  text-align: center;
+  background: var(--bg);
+}
+
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+  color: var(--neon);
+  text-shadow: 0 0 8px var(--neon-glow);
+  margin-bottom: 0.6rem;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   RESPONSIVE — TABLET (≤ 900px)
+   ========================================= */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-image-frame {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .hero-bg-text {
+    font-size: 30vw;
+    opacity: 0.5;
+  }
+}
+
+/* =========================================
+   RESPONSIVE — MOBILE (≤ 600px)
+   ========================================= */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1rem 5%;
+    gap: 0.8rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero {
+    padding: 0 5%;
+    padding-top: 100px;
+    min-height: 100svh;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
+
+  .about {
+    padding: 4rem 5%;
+  }
+
+  .about-stats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .hero-bg-text {
+    display: none;
+  }
+}
+
+/* =========================================
+   NAV TOGGLE — JS hook
+   ========================================= */

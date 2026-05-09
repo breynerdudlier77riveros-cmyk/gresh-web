@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRESH | Calistenia & Street Workout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#" class="logo">GRESH</a>
+    <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#about">Acerca de mí</a></li>
+      <li><a href="#" class="btn-nav">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="hero-tag">Calistenia &amp; Street Workout</span>
+      <h1 class="hero-title">DOMINA<br /><span class="accent">TU CUERPO.</span><br />DOMINA TU VIDA.</h1>
+      <a href="#about" class="btn-primary">Conóceme</a>
+    </div>
+    <div class="hero-bg-text" aria-hidden="true">GRESH</div>
+  </header>
+
+  <!-- ACERCA DE MÍ -->
+  <section class="about" id="about">
+    <div class="about-container">
+
+      <div class="about-image-wrapper">
+        <div class="about-image-frame">
+          <img
+            src="https://placehold.co/480x600/0a0a0a/39FF14?text=GRESH&font=montserrat"
+            alt="Foto de perfil de Gresh"
+            class="about-image"
+          />
+        </div>
+        <div class="about-image-glow" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-text">
+        <span class="section-label">// Mi historia</span>
+        <h2 class="about-title">Acerca <span class="accent">de mí</span></h2>
+
+        <p class="about-bio">
+          Soy Gresh, atleta de calistenia y street workout con más de una década dedicada a perfeccionar el control absoluto del cuerpo. Mi camino comenzó en las barras del barrio, donde descubrí que la fuerza más grande no viene del gimnasio, sino de la disciplina forjada en la calle.
+        </p>
+        <p class="about-bio">
+          A lo largo de estos años he competido a nivel nacional e internacional, representando una filosofía que va más allá del entrenamiento: se trata de mentalidad, constancia y la búsqueda permanente de la excelencia. Cada movimiento que ejecuto es el resultado de miles de horas de práctica y sacrificio.
+        </p>
+        <p class="about-bio">
+          Hoy mi misión es transmitir ese mismo fuego a cada persona que quiera transformar su vida a través del movimiento. En Gresh encontrarás metodología, comunidad y la motivación para romper todos tus límites. Bienvenido a la élite del street workout.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number accent">10<span class="stat-plus">+</span></span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number accent">500<span class="stat-plus">+</span></span>
+            <span class="stat-label">Atletas entrenados</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number accent">15<span class="stat-plus">+</span></span>
+            <span class="stat-label">Competencias</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-logo">GRESH</p>
+    <p class="footer-copy">&copy; 2026 Gresh. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links  = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>
