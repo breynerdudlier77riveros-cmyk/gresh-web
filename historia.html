@@ -15,27 +15,35 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      GRESH<span class="logo-sep">&times;</span><span class="logo-sub">SR WORKOUT</span>
-    </a>
-    <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="ropa.html">Ropa</a></li>
-      <li><a href="paralelas.html">Paralelas</a></li>
-      <li><a href="historia.html" class="active">Mi Historia</a></li>
-    </ul>
-  </nav>
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="ropa.html">Ropa</a></li>
+        <li><a href="paralelas.html">Equipamiento</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">GRESH</a>
+      <ul class="nav-right">
+        <li><a href="historia.html" class="active">Mi Historia</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Abrir men&uacute;">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="ropa.html">Ropa</a>
+    <a href="paralelas.html">Equipamiento</a>
+    <a href="historia.html" class="active">Mi Historia</a>
+  </div>
 
   <!-- PAGE HEADER -->
-  <header class="page-header">
-    <div class="page-header-bg" aria-hidden="true">GRESH</div>
-    <span class="section-label">// Mi historia</span>
-    <h1 class="page-header-title">Acerca <span class="accent">de m&iacute;</span></h1>
-    <p class="page-header-sub">Gresly Natalia Rinc&oacute;n D&iacute;az &mdash; Fundadora de GRESH | Atleta de Calistenia</p>
-  </header>
+  <div class="page-header">
+    <h1>Acerca <span class="accent">de m&iacute;</span></h1>
+    <p>Gresly Natalia Rinc&oacute;n D&iacute;az &mdash; Fundadora de GRESH | Atleta de Calistenia</p>
+  </div>
 
   <!-- ACERCA DE MÍ -->
   <section class="about" id="about">
@@ -49,10 +57,10 @@
             class="about-image"
           />
         </div>
-        <div class="about-image-glow" aria-hidden="true"></div>
       </div>
 
       <div class="about-text">
+        <span class="section-label anim anim-d1">// Mi historia</span>
         <h2 class="about-title anim anim-d2">Acerca <span class="accent">de m&iacute;</span></h2>
         <p class="about-subtitle anim anim-d3">Gresly Natalia Rinc&oacute;n D&iacute;az &ndash; Fundadora de GRESH | Atleta de Calistenia</p>
 
@@ -64,7 +72,7 @@
         <!-- FOTO 1 — Exhibición en colegio -->
         <div class="bio-img-block anim anim-d4">
           <img src="entrenamiento1.jpg" alt="Gresly – Exhibición de calistenia en colegio de Bucaramanga" class="bio-img bio-img--landscape" />
-          <span class="img-caption">Exhibici&oacute;n en colegio &middot; Bucaramanga</span>
+          <p class="img-caption">Exhibici&oacute;n en colegio &middot; Bucaramanga</p>
         </div>
 
         <!-- PÁRRAFO 2 -->
@@ -75,7 +83,7 @@
         <!-- FOTO 2 — Entrenamiento en parque -->
         <div class="bio-img-block anim anim-d6">
           <img src="entrenamiento2.jpg" alt="Gresly – Entrenamiento en parque de barras, Girón" class="bio-img bio-img--landscape" />
-          <span class="img-caption">Entrenamiento &middot; Parque de barras, Gir&oacute;n</span>
+          <p class="img-caption">Entrenamiento &middot; Parque de barras, Gir&oacute;n</p>
         </div>
 
         <!-- PÁRRAFO 3 -->
@@ -86,7 +94,7 @@
         <!-- FOTO 3 — Competencia nacional -->
         <div class="bio-img-block bio-img-block--portrait anim anim-d8">
           <img src="competencia.jpg" alt="Gresly – Competencia nacional de Street Workout" class="bio-img bio-img--portrait" />
-          <span class="img-caption">Competencia nacional &middot; Street Workout</span>
+          <p class="img-caption">Competencia nacional &middot; Street Workout</p>
         </div>
 
         <!-- PÁRRAFO 4 -->
@@ -96,15 +104,15 @@
 
         <div class="about-stats">
           <div class="stat">
-            <span class="stat-number accent">3</span>
+            <span class="stat-number">3</span>
             <span class="stat-label">A&ntilde;os de experiencia</span>
           </div>
           <div class="stat">
-            <span class="stat-number accent">5</span>
+            <span class="stat-number">5</span>
             <span class="stat-label">Torneos nacionales</span>
           </div>
           <div class="stat">
-            <span class="stat-number accent">+</span>
+            <span class="stat-number">+</span>
             <span class="stat-label">Clases grupales</span>
           </div>
         </div>
@@ -115,17 +123,44 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p class="footer-logo">
-      GRESH <span class="logo-sep">&times;</span>
-      <span style="font-size:0.65em;letter-spacing:4px;color:var(--silver)">SR WORKOUT</span>
-    </p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-logo">GRESH <span class="accent">&times;</span> SR WORKOUT</p>
+        <p class="footer-tagline">Calistenia &amp; Street Workout &mdash; Colombia</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="ropa.html">Ropa GRESH</a></li>
+            <li><a href="paralelas.html">Equipamiento SR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nosotros</h4>
+          <ul>
+            <li><a href="historia.html">Mi Historia</a></li>
+            <li><a href="https://wa.me/573107747362" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <p class="footer-copy">&copy; 2026 GRESH &times; SR WORKOUT. Todos los derechos reservados.</p>
   </footer>
 
   <script>
     const toggle = document.querySelector('.nav-toggle');
-    const links  = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    const drawer = document.getElementById('navDrawer');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      drawer.classList.toggle('open');
+    });
+    drawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        drawer.classList.remove('open');
+      });
+    });
   </script>
 </body>
 </html>

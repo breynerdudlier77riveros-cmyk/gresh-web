@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paralelas SR WORKOUT | Equipamiento</title>
+  <title>Equipamiento SR WORKOUT | Cat&aacute;logo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
@@ -13,58 +13,57 @@
   </script>
   <script defer src="/_vercel/insights/script.js"></script>
 </head>
-<body class="sr-page">
+<body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      GRESH<span class="logo-sep">&times;</span><span class="logo-sub">SR WORKOUT</span>
-    </a>
-    <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="ropa.html">Ropa</a></li>
-      <li><a href="paralelas.html" class="active">Paralelas</a></li>
-      <li><a href="historia.html">Mi Historia</a></li>
-    </ul>
-  </nav>
-
-  <!-- PAGE HEADER -->
-  <header class="page-header">
-    <div class="page-header-bg" aria-hidden="true">SR</div>
-    <span class="section-label" style="color:var(--silver);border-color:var(--border-silver)">Marca / Equipamiento</span>
-    <h1 class="page-header-title">PARALELAS <span class="accent-silver">SR WORKOUT</span></h1>
-    <p class="page-header-sub">Equipamiento de alto rendimiento &mdash; Fabricado para durar</p>
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="ropa.html">Ropa</a></li>
+        <li><a href="paralelas.html" class="active">Equipamiento</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">GRESH</a>
+      <ul class="nav-right">
+        <li><a href="historia.html">Mi Historia</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Abrir men&uacute;">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
   </header>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="ropa.html">Ropa</a>
+    <a href="paralelas.html" class="active">Equipamiento</a>
+    <a href="historia.html">Mi Historia</a>
+  </div>
+
+  <!-- CATALOG HERO -->
+  <div class="catalog-hero">
+    <div class="catalog-hero-text">
+      <h1>Equipamiento <span class="accent">SR WORKOUT</span></h1>
+      <p>Fabricado para durar &mdash; Alto rendimiento en calistenia</p>
+    </div>
+    <span class="catalog-count">3 productos</span>
+  </div>
 
   <!-- PRODUCTOS -->
   <section class="products-section">
-    <div class="products-header">
-      <h2>Equipamiento <span class="accent-silver">SR WORKOUT</span></h2>
-      <p>Esc&iacute;benos por WhatsApp para comprar &mdash; Env&iacute;os a todo Colombia</p>
-    </div>
-
     <div class="products-grid">
 
       <!-- Producto 1 -->
       <div class="product-card">
         <div class="product-img-wrap">
-          <img
-            src="placeholder.jpg"
-            alt="Paralelas SR Standard"
-            class="product-img"
-            onerror="this.style.display='none'"
-          />
+          <span class="product-badge">Popular</span>
+          <img src="placeholder.jpg" alt="Paralelas SR Standard" class="product-img" onerror="this.style.display='none'" />
         </div>
         <div class="product-info">
+          <p class="product-brand">SR WORKOUT &mdash; Equipamiento</p>
           <p class="product-name">Paralelas SR Standard</p>
+          <p class="product-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(18)</span></p>
           <p class="product-price">$250.000 COP</p>
-          <a
-            href="https://wa.me/573173057685?text=Hola%20SR%20WORKOUT,%20me%20interesa%20comprar%20unas%20paralelas."
-            class="btn-whatsapp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://wa.me/573173057685?text=Hola%20SR%20WORKOUT,%20me%20interesa%20comprar%20unas%20paralelas." class="btn-comprar" target="_blank" rel="noopener noreferrer">
             Comprar por WhatsApp
           </a>
         </div>
@@ -73,22 +72,15 @@
       <!-- Producto 2 -->
       <div class="product-card">
         <div class="product-img-wrap">
-          <img
-            src="placeholder.jpg"
-            alt="Paralelas SR Pro Altura Ajustable"
-            class="product-img"
-            onerror="this.style.display='none'"
-          />
+          <span class="product-badge">Pro</span>
+          <img src="placeholder.jpg" alt="Paralelas SR Pro Ajustable" class="product-img" onerror="this.style.display='none'" />
         </div>
         <div class="product-info">
+          <p class="product-brand">SR WORKOUT &mdash; Equipamiento</p>
           <p class="product-name">Paralelas SR Pro Ajustable</p>
+          <p class="product-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(9)</span></p>
           <p class="product-price">$380.000 COP</p>
-          <a
-            href="https://wa.me/573173057685?text=Hola%20SR%20WORKOUT,%20me%20interesa%20comprar%20unas%20paralelas."
-            class="btn-whatsapp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://wa.me/573173057685?text=Hola%20SR%20WORKOUT,%20me%20interesa%20comprar%20unas%20paralelas." class="btn-comprar" target="_blank" rel="noopener noreferrer">
             Comprar por WhatsApp
           </a>
         </div>
@@ -97,22 +89,15 @@
       <!-- Producto 3 -->
       <div class="product-card">
         <div class="product-img-wrap">
-          <img
-            src="placeholder.jpg"
-            alt="Kit Bandas de Resistencia SR"
-            class="product-img"
-            onerror="this.style.display='none'"
-          />
+          <span class="product-badge">Oferta</span>
+          <img src="placeholder.jpg" alt="Kit Bandas SR Resistencia" class="product-img" onerror="this.style.display='none'" />
         </div>
         <div class="product-info">
+          <p class="product-brand">SR WORKOUT &mdash; Equipamiento</p>
           <p class="product-name">Kit Bandas SR Resistencia</p>
+          <p class="product-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(31)</span></p>
           <p class="product-price">$60.000 COP</p>
-          <a
-            href="https://wa.me/573173057685?text=Hola%20SR%20WORKOUT,%20me%20interesa%20comprar%20unas%20paralelas."
-            class="btn-whatsapp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://wa.me/573173057685?text=Hola%20SR%20WORKOUT,%20me%20interesa%20comprar%20unas%20paralelas." class="btn-comprar" target="_blank" rel="noopener noreferrer">
             Comprar por WhatsApp
           </a>
         </div>
@@ -123,17 +108,44 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p class="footer-logo">
-      GRESH <span class="logo-sep">&times;</span>
-      <span style="font-size:0.65em;letter-spacing:4px;color:var(--silver)">SR WORKOUT</span>
-    </p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-logo">GRESH <span class="accent">&times;</span> SR WORKOUT</p>
+        <p class="footer-tagline">Calistenia &amp; Street Workout &mdash; Colombia</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="ropa.html">Ropa GRESH</a></li>
+            <li><a href="paralelas.html">Equipamiento SR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Nosotros</h4>
+          <ul>
+            <li><a href="historia.html">Mi Historia</a></li>
+            <li><a href="https://wa.me/573173057685" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <p class="footer-copy">&copy; 2026 GRESH &times; SR WORKOUT. Todos los derechos reservados.</p>
   </footer>
 
   <script>
     const toggle = document.querySelector('.nav-toggle');
-    const links  = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    const drawer = document.getElementById('navDrawer');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      drawer.classList.toggle('open');
+    });
+    drawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        drawer.classList.remove('open');
+      });
+    });
   </script>
 </body>
 </html>
