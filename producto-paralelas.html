@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paralelas SR Pro Ajustable | GRESH &times; SR WORKOUT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="ropa.html">Ropa GRESH</a></li>
+        <li><a href="paralelas.html" class="active">Equipamiento SR</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">GRESH</a>
+      <ul class="nav-right">
+        <li><a href="historia.html">Mi Historia</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Abrir men&uacute;">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MEN&Uacute; M&Oacute;VIL -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="ropa.html">Ropa GRESH</a>
+    <a href="paralelas.html" class="active">Equipamiento SR WORKOUT</a>
+    <a href="historia.html">Mi Historia</a>
+  </div>
+
+  <!-- BREADCRUMBS -->
+  <nav class="pdv2-breadcrumb" aria-label="Migas de pan">
+    <a href="index.html">Inicio</a>
+    <span class="sep">›</span>
+    <a href="paralelas.html">Equipamiento</a>
+    <span class="sep">›</span>
+    Paralelas SR Pro
+  </nav>
+
+  <!-- 1. SECCIÓN PRINCIPAL -->
+  <section class="pdv2-main">
+    <div class="pdv2-grid">
+
+      <!-- GALERÍA -->
+      <div class="pdv2-gallery">
+        <div class="pdv2-thumbs">
+          <div class="pdv2-thumb active" onclick="cambiarImagen(this,'entrenamiento1.jpg','Paralelas SR Pro Ajustable — vista principal')">
+            <img src="entrenamiento1.jpg" alt="Vista 1" />
+          </div>
+          <div class="pdv2-thumb" onclick="cambiarImagen(this,'entrenamiento2.jpg','Paralelas SR Pro Ajustable — vista lateral')">
+            <img src="entrenamiento2.jpg" alt="Vista 2" />
+          </div>
+          <div class="pdv2-thumb" onclick="cambiarImagen(this,'competencia.jpg','Paralelas SR — en competencia')">
+            <img src="competencia.jpg" alt="Vista 3" />
+          </div>
+          <div class="pdv2-thumb" onclick="cambiarImagen(this,'foto-perfil.jpg','Atleta con Paralelas SR')">
+            <img src="foto-perfil.jpg" alt="Vista 4" />
+          </div>
+        </div>
+        <div class="pdv2-main-img-wrap">
+          <img id="imgPrincipal" src="entrenamiento1.jpg" alt="Paralelas SR Pro Ajustable" class="pdv2-main-img" />
+        </div>
+      </div>
+
+      <!-- INFO Y CHECKOUT -->
+      <div class="pdv2-info">
+
+        <div class="pdv2-rating">
+          <span class="pdv2-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="pdv2-rating-count">(407)</span>
+        </div>
+
+        <h1 class="pdv2-title">Paralelas SR Pro Ajustable</h1>
+
+        <div class="pdv2-price-block">
+          <span class="pdv2-price" id="precioActual">$380.000 COP</span>
+          <span class="pdv2-price-final" id="precioFinal"></span>
+        </div>
+        <p class="pdv2-shipping-note">excl. costo de env&iacute;o</p>
+
+        <hr class="pdv2-hr" />
+
+        <!-- SELECTOR DE ESTILO -->
+        <span class="pdv2-variant-label">Estilo: <strong id="estiloActivo">Pro Ajustable</strong></span>
+        <div class="pdv2-variants-grid">
+          <div class="pdv2-variant" data-precio="250000" data-nombre="Paralelas SR Standard" onclick="seleccionarVariante(this)">
+            <img src="entrenamiento1.jpg" alt="Standard" class="pdv2-variant-img" />
+            <span class="pdv2-variant-name">Standard</span>
+            <span class="pdv2-variant-price">$250.000</span>
+          </div>
+          <div class="pdv2-variant active" data-precio="380000" data-nombre="Paralelas SR Pro Ajustable" onclick="seleccionarVariante(this)">
+            <img src="entrenamiento2.jpg" alt="Pro Ajustable" class="pdv2-variant-img" />
+            <span class="pdv2-variant-name">Pro Ajustable</span>
+            <span class="pdv2-variant-price">$380.000</span>
+          </div>
+          <div class="pdv2-variant" data-precio="60000" data-nombre="Kit Bandas SR Resistencia" onclick="seleccionarVariante(this)">
+            <img src="foto-perfil.jpg" alt="Kit Bandas" class="pdv2-variant-img" />
+            <span class="pdv2-variant-name">Kit Bandas</span>
+            <span class="pdv2-variant-price">$60.000</span>
+          </div>
+        </div>
+
+        <p class="pdv2-stock">&#9679; En Stock &mdash; Env&iacute;o r&aacute;pido</p>
+
+        <!-- C&Oacute;DIGO DE DESCUENTO -->
+        <div class="pdv2-discount">
+          <span class="pdv2-discount-label">C&oacute;digo de descuento</span>
+          <div class="pdv2-discount-row">
+            <input type="text" id="inputCodigo" class="pdv2-discount-input" placeholder="Ej: FUERZA10" maxlength="12" />
+            <button id="btnAplicar" class="pdv2-btn-apply">Aplicar</button>
+          </div>
+          <p class="pdv2-discount-msg" id="mensajeDescuento"></p>
+        </div>
+
+        <!-- BOT&Oacute;N COMPRAR -->
+        <a id="btnComprar"
+           href="https://wa.me/573173057685?text=Hola%2C%20quiero%20comprar%20Paralelas%20SR%20Pro%20Ajustable.%20Precio%3A%20%24380.000%20COP."
+           class="pdv2-btn-buy" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Comprar por WhatsApp
+        </a>
+
+        <!-- PAGOS -->
+        <div class="pdv2-pay-row">
+          <span class="pdv2-pay-chip">VISA</span>
+          <span class="pdv2-pay-chip">MASTERCARD</span>
+          <span class="pdv2-pay-chip">PSE</span>
+          <span class="pdv2-pay-chip">NEQUI</span>
+          <span class="pdv2-pay-chip">DAVIPLATA</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. DETALLES Y ACORDEONES -->
+  <section class="pdv2-details">
+    <div class="pdv2-details-inner">
+
+      <!-- HIGHLIGHTS -->
+      <div>
+        <p class="pdv2-highlights-label">Destacados</p>
+        <ul class="pdv2-highlights">
+          <li class="pdv2-highlight">Agarre &oacute;ptimo &mdash; tubo de 1&frac14;&rdquo; con grip antideslizante</li>
+          <li class="pdv2-highlight">Construcci&oacute;n s&oacute;lida &mdash; soporta hasta 120 kg</li>
+          <li class="pdv2-highlight">Dise&ntilde;o ajustable en altura y ancho</li>
+          <li class="pdv2-highlight">Acabado anticorrosivo para uso en exteriores</li>
+        </ul>
+      </div>
+
+      <!-- ACORDEONES -->
+      <div class="pdv2-accordion">
+
+        <details class="pdv2-accordion-item">
+          <summary>Detalles del producto</summary>
+          <div class="pdv2-accordion-body">
+            <p>Las Paralelas SR Pro Ajustable est&aacute;n fabricadas con tuber&iacute;a de acero galvanizado de 1&frac14;&rdquo; de di&aacute;metro. Su sistema de ajuste permite modificar la altura entre 60 y 90 cm y el ancho entre 45 y 65 cm. La soldadura es artesanal y la terminaci&oacute;n incluye pintura electrost&aacute;tica anticorrosiva apta para exteriores colombianos.</p>
+          </div>
+        </details>
+
+        <details class="pdv2-accordion-item">
+          <summary>Especificaciones</summary>
+          <div class="pdv2-accordion-body">
+            <ul>
+              <li>Material: Acero galvanizado 1&frac14;&rdquo;</li>
+              <li>Altura: 60 &ndash; 90 cm (ajustable)</li>
+              <li>Ancho entre barras: 45 &ndash; 65 cm (ajustable)</li>
+              <li>Peso del equipo: 6.5 kg</li>
+              <li>Carga m&aacute;xima: 120 kg</li>
+              <li>Terminaci&oacute;n: Pintura electrost&aacute;tica anticorrosiva</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="pdv2-accordion-item">
+          <summary>Gu&iacute;a de cuidado</summary>
+          <div class="pdv2-accordion-body">
+            <p>Para mantener tus paralelas en &oacute;ptimas condiciones: limpiar regularmente con un pa&ntilde;o h&uacute;medo; evitar superficies mojadas durante tiempo prolongado; revisar los puntos de ajuste cada 2&ndash;3 semanas de uso intensivo. Un pa&ntilde;o seco despu&eacute;s de cada sesi&oacute;n prolonga la vida del acabado.</p>
+          </div>
+        </details>
+
+        <details class="pdv2-accordion-item">
+          <summary>Contenido del paquete</summary>
+          <div class="pdv2-accordion-body">
+            <ul>
+              <li>2 barras paralelas con soportes ajustables</li>
+              <li>4 tornillos de ajuste de acero inoxidable</li>
+              <li>4 tapones antideslizantes de caucho</li>
+              <li>Manual de ensamble ilustrado</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="pdv2-accordion-item">
+          <summary>Env&iacute;os y devoluciones</summary>
+          <div class="pdv2-accordion-body">
+            <p>Despachamos a todo Colombia v&iacute;a Servientrega y Coordinadora. Tiempo estimado: 3&ndash;7 d&iacute;as h&aacute;biles seg&uacute;n la ciudad. Para devoluciones, cont&aacute;ctanos por WhatsApp dentro de los 5 d&iacute;as h&aacute;biles posteriores a la recepci&oacute;n del pedido con el empaque original.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <div class="pdv2-trust">
+    <div class="pdv2-trust-badge">
+      <svg class="pdv2-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+      </svg>
+      <span class="pdv2-trust-title">Env&iacute;o r&aacute;pido</span>
+      <span class="pdv2-trust-sub">A todo Colombia</span>
+    </div>
+    <div class="pdv2-trust-badge">
+      <svg class="pdv2-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+      <span class="pdv2-trust-title">Garant&iacute;a 6 meses</span>
+      <span class="pdv2-trust-sub">Calidad comprobada</span>
+    </div>
+    <div class="pdv2-trust-badge">
+      <svg class="pdv2-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+      </svg>
+      <span class="pdv2-trust-title">Fabricado en Colombia</span>
+      <span class="pdv2-trust-sub">Taller artesanal SR WORKOUT</span>
+    </div>
+  </div>
+
+  <!-- 3. ELEVA TU RENDIMIENTO -->
+  <section class="pdv2-features">
+    <div class="pdv2-features-hdr">
+      <h2>ELEVA TU <span class="accent">RENDIMIENTO</span></h2>
+      <p>Dise&ntilde;ado para las altas ambiciones del street workout</p>
+    </div>
+    <div class="pdv2-features-grid">
+      <div class="pdv2-feat">
+        <div class="pdv2-feat-img-wrap">
+          <img src="entrenamiento1.jpg" alt="Estable y duradero" class="pdv2-feat-img" />
+        </div>
+        <h3>Estable y Duradero</h3>
+        <p>Soldadura profesional y acero de alta resistencia garantizan estabilidad total en cada repetici&oacute;n, sin importar la intensidad de tu entreno.</p>
+      </div>
+      <div class="pdv2-feat">
+        <div class="pdv2-feat-img-wrap">
+          <img src="entrenamiento2.jpg" alt="Máxima variedad" class="pdv2-feat-img" />
+        </div>
+        <h3>M&aacute;xima Variedad</h3>
+        <p>Con dise&ntilde;o ajustable adaptas el equipo a fondos, L-sit, dips y m&aacute;s de 20 ejercicios de calistenia para todos los niveles.</p>
+      </div>
+      <div class="pdv2-feat">
+        <div class="pdv2-feat-img-wrap">
+          <img src="competencia.jpg" alt="Agarre seguro" class="pdv2-feat-img" style="object-position: center top;" />
+        </div>
+        <h3>Agarre Seguro</h3>
+        <p>El tubo de 1&frac14;&rdquo; proporciona el di&aacute;metro ideal para un grip firme y controlado incluso en las sesiones m&aacute;s largas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. VIDEO Y RESEÑAS -->
+  <div class="pdv2-video">
+    <div class="pdv2-video-bg" style="background-image: url('entrenamiento2.jpg');"></div>
+    <div class="pdv2-video-overlay">
+      <div class="pdv2-play">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+      </div>
+      <span class="pdv2-video-caption">Ver en acci&oacute;n</span>
+    </div>
+  </div>
+
+  <section class="pdv2-reviews">
+    <div class="pdv2-reviews-inner">
+
+      <div class="pdv2-reviews-summary-box">
+        <div class="pdv2-avg-score">4.92</div>
+        <div class="pdv2-avg-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="pdv2-avg-label">Promedio</div>
+        <div class="pdv2-avg-total">407 rese&ntilde;as verificadas</div>
+        <span class="pdv2-avg-excellent">Excelente</span>
+      </div>
+
+      <div class="pdv2-reviews-list">
+
+        <div class="pdv2-review-card">
+          <div class="pdv2-rc-top">
+            <span class="pdv2-rc-author">Andr&eacute;s M.</span>
+            <span class="pdv2-rc-verified">&#10003; Cliente Verificado</span>
+          </div>
+          <div class="pdv2-rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="pdv2-rc-text">&ldquo;Las paralelas SR son incre&iacute;bles. Solid&iacute;simas, no se mueven ni con el m&aacute;ximo peso. Ya van 8 meses de uso diario y siguen perfectas. Mejor inversi&oacute;n para calistenia en Colombia.&rdquo;</p>
+        </div>
+
+        <div class="pdv2-review-card">
+          <div class="pdv2-rc-top">
+            <span class="pdv2-rc-author">Juan C.</span>
+            <span class="pdv2-rc-verified">&#10003; Cliente Verificado</span>
+          </div>
+          <div class="pdv2-rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="pdv2-rc-text">&ldquo;Compr&eacute; las Pro Ajustables y son lo mejor que he comprado para entrenar en casa. Llegaron super bien empacadas y el servicio por WhatsApp fue rapid&iacute;simo. Recomendad&iacute;simas.&rdquo;</p>
+        </div>
+
+        <div class="pdv2-review-card">
+          <div class="pdv2-rc-top">
+            <span class="pdv2-rc-author">Sebasti&aacute;n R.</span>
+            <span class="pdv2-rc-verified">&#10003; Cliente Verificado</span>
+          </div>
+          <div class="pdv2-rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="pdv2-rc-text">&ldquo;Llevo 1 a&ntilde;o us&aacute;ndolas para fondos y L-sit. Nunca se han aflojado, sin corrosión y el grip es perfecto. Definitivamente vuelvo a comprar.&rdquo;</p>
+        </div>
+
+        <div class="pdv2-review-card">
+          <div class="pdv2-rc-top">
+            <span class="pdv2-rc-author">Valentina T.</span>
+            <span class="pdv2-rc-verified">&#10003; Cliente Verificada</span>
+          </div>
+          <div class="pdv2-rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="pdv2-rc-text">&ldquo;Perfectas para principiantes. Estables, buen agarre y llegaron a Bogot&aacute; en 4 d&iacute;as. Ya ped&iacute; el Kit de Bandas tambi&eacute;n. El precio con el c&oacute;digo FUERZA10 es incre&iacute;ble.&rdquo;</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-logo">GRESH <span class="accent">&times;</span> SR WORKOUT</p>
+        <p class="footer-tagline">Calistenia &amp; Street Workout &mdash; Colombia</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="ropa.html">Ropa GRESH</a></li>
+            <li><a href="paralelas.html">Equipamiento SR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Soporte</h4>
+          <ul>
+            <li><a href="https://wa.me/573107747362" target="_blank" rel="noopener noreferrer">WhatsApp GRESH</a></li>
+            <li><a href="https://wa.me/573173057685" target="_blank" rel="noopener noreferrer">WhatsApp SR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informaci&oacute;n</h4>
+          <ul>
+            <li><a href="historia.html">Mi Historia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-payments">
+      <p class="footer-payments-label">Pagos Seguros</p>
+      <div class="payment-badges">
+        <span class="pay-badge">VISA</span><span class="pay-badge">MASTERCARD</span>
+        <span class="pay-badge">PSE</span><span class="pay-badge">BANCOLOMBIA</span>
+        <span class="pay-badge">NEQUI</span><span class="pay-badge">DAVIPLATA</span>
+        <span class="pay-badge">EFECTY</span>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 GRESH &times; SR WORKOUT. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Navbar
+    const toggle = document.querySelector('.nav-toggle');
+    const drawer = document.getElementById('navDrawer');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('open'); drawer.classList.toggle('open'); });
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { toggle.classList.remove('open'); drawer.classList.remove('open'); }));
+
+    // State
+    let precioBase = 380000;
+    let nombreProducto = 'Paralelas SR Pro Ajustable';
+    let descuentoAplicado = false;
+    let codigoActivo = '';
+    const WA_NUMBER = '573173057685';
+
+    function formatCOP(n) { return '$' + n.toLocaleString('es-CO') + ' COP'; }
+
+    function actualizarWhatsApp(precio) {
+      const msg = descuentoAplicado
+        ? 'Hola, quiero comprar ' + nombreProducto + ' con el código ' + codigoActivo + '. Precio final: ' + formatCOP(precio) + '.'
+        : 'Hola, quiero comprar ' + nombreProducto + '. Precio: ' + formatCOP(precio) + '.';
+      document.getElementById('btnComprar').href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+    }
+
+    function actualizarPrecio() {
+      const precioEl = document.getElementById('precioActual');
+      const finalEl  = document.getElementById('precioFinal');
+      if (descuentoAplicado) {
+        const nuevo = Math.round(precioBase * 0.9);
+        precioEl.classList.add('tachado');
+        precioEl.textContent = formatCOP(precioBase);
+        finalEl.style.display = 'inline';
+        finalEl.textContent = formatCOP(nuevo);
+        actualizarWhatsApp(nuevo);
+      } else {
+        precioEl.classList.remove('tachado');
+        precioEl.textContent = formatCOP(precioBase);
+        finalEl.style.display = 'none';
+        actualizarWhatsApp(precioBase);
+      }
+    }
+
+    function seleccionarVariante(card) {
+      document.querySelectorAll('.pdv2-variant').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      precioBase = parseInt(card.dataset.precio, 10);
+      nombreProducto = card.dataset.nombre;
+      document.getElementById('estiloActivo').textContent = card.querySelector('.pdv2-variant-name').textContent;
+      descuentoAplicado = false;
+      codigoActivo = '';
+      document.getElementById('inputCodigo').value = '';
+      document.getElementById('mensajeDescuento').textContent = '';
+      document.getElementById('mensajeDescuento').className = 'pdv2-discount-msg';
+      actualizarPrecio();
+    }
+
+    document.getElementById('btnAplicar').addEventListener('click', () => {
+      const codigo = document.getElementById('inputCodigo').value.trim().toUpperCase();
+      const msgEl  = document.getElementById('mensajeDescuento');
+      if (codigo === 'FUERZA10') {
+        descuentoAplicado = true;
+        codigoActivo = codigo;
+        const ahorro = Math.round(precioBase * 0.10);
+        msgEl.className = 'pdv2-discount-msg valid';
+        msgEl.textContent = '¡Código válido! Ahorras ' + formatCOP(ahorro) + ' (10% OFF)';
+      } else {
+        descuentoAplicado = false;
+        codigoActivo = '';
+        msgEl.className = 'pdv2-discount-msg invalid';
+        msgEl.textContent = 'Código no válido. Intenta con FUERZA10.';
+      }
+      actualizarPrecio();
+    });
+
+    document.getElementById('inputCodigo').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('btnAplicar').click(); });
+
+    function cambiarImagen(thumb, src, alt) {
+      const img = document.getElementById('imgPrincipal');
+      img.style.opacity = '0';
+      setTimeout(() => { img.src = src; img.alt = alt; img.style.opacity = '1'; }, 180);
+      document.querySelectorAll('.pdv2-thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    }
+
+    // Init
+    actualizarPrecio();
+  </script>
+</body>
+</html>

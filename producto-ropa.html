@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camiseta GRESH Signature | GRESH &times; SR WORKOUT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="ropa.html" class="active">Ropa GRESH</a></li>
+        <li><a href="paralelas.html">Equipamiento SR</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">GRESH</a>
+      <ul class="nav-right">
+        <li><a href="historia.html">Mi Historia</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Abrir men&uacute;">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MEN&Uacute; M&Oacute;VIL -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="ropa.html" class="active">Ropa GRESH</a>
+    <a href="paralelas.html">Equipamiento SR WORKOUT</a>
+    <a href="historia.html">Mi Historia</a>
+  </div>
+
+  <!-- BREADCRUMBS -->
+  <nav class="pdv2-breadcrumb" aria-label="Migas de pan">
+    <a href="index.html">Inicio</a>
+    <span class="sep">›</span>
+    <a href="ropa.html">Ropa</a>
+    <span class="sep">›</span>
+    Camiseta Signature
+  </nav>
+
+  <!-- 1. SECCIÓN PRINCIPAL -->
+  <section class="pdv2-main">
+    <div class="pdv2-grid">
+
+      <!-- GALERÍA -->
+      <div class="pdv2-gallery">
+        <div class="pdv2-thumbs">
+          <div class="pdv2-thumb active" onclick="cambiarImagen(this,'entrenamiento2.jpg','Camiseta GRESH Signature — vista frontal')">
+            <img src="entrenamiento2.jpg" alt="Vista 1" />
+          </div>
+          <div class="pdv2-thumb" onclick="cambiarImagen(this,'entrenamiento1.jpg','Camiseta GRESH — detalle tela')">
+            <img src="entrenamiento1.jpg" alt="Vista 2" />
+          </div>
+          <div class="pdv2-thumb" onclick="cambiarImagen(this,'competencia.jpg','Camiseta GRESH — en competencia')">
+            <img src="competencia.jpg" alt="Vista 3" />
+          </div>
+          <div class="pdv2-thumb" onclick="cambiarImagen(this,'foto-perfil.jpg','Atleta con Camiseta GRESH')">
+            <img src="foto-perfil.jpg" alt="Vista 4" />
+          </div>
+        </div>
+        <div class="pdv2-main-img-wrap">
+          <img id="imgPrincipal" src="entrenamiento2.jpg" alt="Camiseta GRESH Signature" class="pdv2-main-img" />
+        </div>
+      </div>
+
+      <!-- INFO Y CHECKOUT -->
+      <div class="pdv2-info">
+
+        <div class="pdv2-rating">
+          <span class="pdv2-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="pdv2-rating-count">(342)</span>
+        </div>
+
+        <h1 class="pdv2-title">Camiseta GRESH Signature</h1>
+
+        <div class="pdv2-price-block">
+          <span class="pdv2-price" id="precioActual">$50.000 COP</span>
+          <span class="pdv2-price-final" id="precioFinal"></span>
+        </div>
+        <p class="pdv2-shipping-note">excl. costo de env&iacute;o</p>
+
+        <hr class="pdv2-hr" />
+
+        <!-- SELECTOR DE ESTILO -->
+        <span class="pdv2-variant-label">Estilo: <strong id="estiloActivo">Camiseta Signature</strong></span>
+        <div class="pdv2-variants-grid">
+          <div class="pdv2-variant active" data-precio="50000" data-nombre="Camiseta GRESH Signature" onclick="seleccionarVariante(this)">
+            <img src="entrenamiento2.jpg" alt="Camiseta Signature" class="pdv2-variant-img" />
+            <span class="pdv2-variant-name">Camiseta Signature</span>
+            <span class="pdv2-variant-price">$50.000</span>
+          </div>
+          <div class="pdv2-variant" data-precio="80000" data-nombre="Hoodie GRESH Oversize" onclick="seleccionarVariante(this)">
+            <img src="entrenamiento1.jpg" alt="Hoodie Oversize" class="pdv2-variant-img" />
+            <span class="pdv2-variant-name">Hoodie Oversize</span>
+            <span class="pdv2-variant-price">$80.000</span>
+          </div>
+          <div class="pdv2-variant" data-precio="45000" data-nombre="Shorts GRESH Pro" onclick="seleccionarVariante(this)">
+            <img src="competencia.jpg" alt="Shorts Pro" class="pdv2-variant-img" style="object-position: center top;" />
+            <span class="pdv2-variant-name">Shorts Pro</span>
+            <span class="pdv2-variant-price">$45.000</span>
+          </div>
+        </div>
+
+        <!-- SELECTOR DE TALLA -->
+        <span class="pdv2-variant-label">Talla: <strong id="tallaActiva">M</strong></span>
+        <div class="pdv2-sizes-row">
+          <button class="pdv2-size-btn" onclick="seleccionarTalla(this)">XS</button>
+          <button class="pdv2-size-btn" onclick="seleccionarTalla(this)">S</button>
+          <button class="pdv2-size-btn active" onclick="seleccionarTalla(this)">M</button>
+          <button class="pdv2-size-btn" onclick="seleccionarTalla(this)">L</button>
+          <button class="pdv2-size-btn" onclick="seleccionarTalla(this)">XL</button>
+        </div>
+
+        <p class="pdv2-stock">&#9679; En Stock &mdash; Env&iacute;o r&aacute;pido</p>
+
+        <!-- C&Oacute;DIGO DE DESCUENTO -->
+        <div class="pdv2-discount">
+          <span class="pdv2-discount-label">C&oacute;digo de descuento</span>
+          <div class="pdv2-discount-row">
+            <input type="text" id="inputCodigo" class="pdv2-discount-input" placeholder="Ej: FUERZA10" maxlength="12" />
+            <button id="btnAplicar" class="pdv2-btn-apply">Aplicar</button>
+          </div>
+          <p class="pdv2-discount-msg" id="mensajeDescuento"></p>
+        </div>
+
+        <!-- BOT&Oacute;N COMPRAR -->
+        <a id="btnComprar"
+           href="https://wa.me/573107747362?text=Hola%2C%20quiero%20comprar%20Camiseta%20GRESH%20Signature%20talla%20M.%20Precio%3A%20%2450.000%20COP."
+           class="pdv2-btn-buy" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Comprar por WhatsApp
+        </a>
+
+        <!-- PAGOS -->
+        <div class="pdv2-pay-row">
+          <span class="pdv2-pay-chip">VISA</span>
+          <span class="pdv2-pay-chip">MASTERCARD</span>
+          <span class="pdv2-pay-chip">PSE</span>
+          <span class="pdv2-pay-chip">NEQUI</span>
+          <span class="pdv2-pay-chip">DAVIPLATA</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. DETALLES Y ACORDEONES -->
+  <section class="pdv2-details">
+    <div class="pdv2-details-inner">
+
+      <!-- HIGHLIGHTS -->
+      <div>
+        <p class="pdv2-highlights-label">Destacados</p>
+        <ul class="pdv2-highlights">
+          <li class="pdv2-highlight">Tela t&eacute;cnica transpirable &mdash; 65% poli&eacute;ster / 35% algod&oacute;n</li>
+          <li class="pdv2-highlight">Corte ergon&oacute;mico para movimientos de calistenia</li>
+          <li class="pdv2-highlight">Durabilidad garantizada &mdash; resistente a lavados frecuentes</li>
+          <li class="pdv2-highlight">Dise&ntilde;o exclusivo GRESH &mdash; identidad street workout colombiana</li>
+        </ul>
+      </div>
+
+      <!-- ACORDEONES -->
+      <div class="pdv2-accordion">
+
+        <details class="pdv2-accordion-item">
+          <summary>Detalles del producto</summary>
+          <div class="pdv2-accordion-body">
+            <p>La Camiseta GRESH Signature est&aacute; confeccionada en tela t&eacute;cnica con 65% poli&eacute;ster y 35% algod&oacute;n peinado. Su corte est&aacute; dise&ntilde;ado para maximizar la movilidad en movimientos de calistenia como pull-ups, dips y muscle-ups. Disponible en negro con logo GRESH en seriograf&iacute;a de alta durabilidad.</p>
+          </div>
+        </details>
+
+        <details class="pdv2-accordion-item">
+          <summary>Especificaciones</summary>
+          <div class="pdv2-accordion-body">
+            <ul>
+              <li>Composici&oacute;n: 65% Poli&eacute;ster / 35% Algod&oacute;n peinado</li>
+              <li>Gramaje: 180 g/m&sup2;</li>
+              <li>Tallas: XS, S, M, L, XL</li>
+              <li>Colores: Negro, Verde, Gris</li>
+              <li>Impresión: Seriograf&iacute;a de alta durabilidad</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="pdv2-accordion-item">
+          <summary>Gu&iacute;a de cuidado</summary>
+          <div class="pdv2-accordion-body">
+            <p>Para prolongar la vida de tu prenda: lavar a m&aacute;quina m&aacute;ximo 30&deg;C; no usar blanqueador; no planchar directamente sobre el logo; secar a la sombra; no usar secadora. El lavado al rev&eacute;s protege el acabado y los colores.</p>
+          </div>
+        </details>
+
+        <details class="pdv2-accordion-item">
+          <summary>Contenido del paquete</summary>
+          <div class="pdv2-accordion-body">
+            <ul>
+              <li>1 Camiseta GRESH Signature</li>
+              <li>Etiqueta de talla y composici&oacute;n</li>
+              <li>Bolsa GRESH reutilizable</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="pdv2-accordion-item">
+          <summary>Env&iacute;os y devoluciones</summary>
+          <div class="pdv2-accordion-body">
+            <p>Despachamos a todo Colombia en 3&ndash;5 d&iacute;as h&aacute;biles. Para tallas incorrectas, cont&aacute;ctanos por WhatsApp dentro de los 7 d&iacute;as h&aacute;biles con el empaque original. Aceptamos cambios por talla o modelo seg&uacute;n disponibilidad.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <div class="pdv2-trust">
+    <div class="pdv2-trust-badge">
+      <svg class="pdv2-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+      </svg>
+      <span class="pdv2-trust-title">Env&iacute;o seguro</span>
+      <span class="pdv2-trust-sub">3&ndash;5 d&iacute;as a Colombia</span>
+    </div>
+    <div class="pdv2-trust-badge">
+      <svg class="pdv2-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+      </svg>
+      <span class="pdv2-trust-title">Dise&ntilde;o colombiano</span>
+      <span class="pdv2-trust-sub">Por atletas, para atletas</span>
+    </div>
+    <div class="pdv2-trust-badge">
+      <svg class="pdv2-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+      <span class="pdv2-trust-title">Calidad premium</span>
+      <span class="pdv2-trust-sub">Materiales t&eacute;cnicos</span>
+    </div>
+  </div>
+
+  <!-- 3. ELEVA TU RENDIMIENTO -->
+  <section class="pdv2-features">
+    <div class="pdv2-features-hdr">
+      <h2>ELEVA TU <span class="accent">RENDIMIENTO</span></h2>
+      <p>Ropa que se adapta a cada movimiento</p>
+    </div>
+    <div class="pdv2-features-grid">
+      <div class="pdv2-feat">
+        <div class="pdv2-feat-img-wrap">
+          <img src="entrenamiento2.jpg" alt="Tela de alto rendimiento" class="pdv2-feat-img" />
+        </div>
+        <h3>Tela de Alto Rendimiento</h3>
+        <p>Tecnolog&iacute;a transpirable que regula la temperatura corporal y mantiene la piel seca en los entrenos m&aacute;s intensos.</p>
+      </div>
+      <div class="pdv2-feat">
+        <div class="pdv2-feat-img-wrap">
+          <img src="entrenamiento1.jpg" alt="Corte ergonómico" class="pdv2-feat-img" />
+        </div>
+        <h3>Corte Ergon&oacute;mico</h3>
+        <p>Cada costura est&aacute; dise&ntilde;ada para no interferir con los movimientos de calistenia. M&aacute;xima libertad en cada repetici&oacute;n.</p>
+      </div>
+      <div class="pdv2-feat">
+        <div class="pdv2-feat-img-wrap">
+          <img src="competencia.jpg" alt="Durabilidad real" class="pdv2-feat-img" style="object-position: center top;" />
+        </div>
+        <h3>Durabilidad Real</h3>
+        <p>Probada en m&aacute;s de 200 lavados sin p&eacute;rdida de color ni elasticidad. La ropa que dura tanto como t&uacute; entrenas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. VIDEO Y RESEÑAS -->
+  <div class="pdv2-video">
+    <div class="pdv2-video-bg" style="background-image: url('entrenamiento1.jpg');"></div>
+    <div class="pdv2-video-overlay">
+      <div class="pdv2-play">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+      </div>
+      <span class="pdv2-video-caption">Ver en acci&oacute;n</span>
+    </div>
+  </div>
+
+  <section class="pdv2-reviews">
+    <div class="pdv2-reviews-inner">
+
+      <div class="pdv2-reviews-summary-box">
+        <div class="pdv2-avg-score">4.89</div>
+        <div class="pdv2-avg-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="pdv2-avg-label">Promedio</div>
+        <div class="pdv2-avg-total">342 rese&ntilde;as verificadas</div>
+        <span class="pdv2-avg-excellent">Excelente</span>
+      </div>
+
+      <div class="pdv2-reviews-list">
+
+        <div class="pdv2-review-card">
+          <div class="pdv2-rc-top">
+            <span class="pdv2-rc-author">Daniela V.</span>
+            <span class="pdv2-rc-verified">&#10003; Cliente Verificada</span>
+          </div>
+          <div class="pdv2-rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="pdv2-rc-text">&ldquo;La camiseta GRESH es lo mejor que tengo para entrenar. La us&eacute; en dos torneos y se mantiene perfecta. Transpira muy bien, no aprieta y el dise&ntilde;o es reconocido en todo el parque.&rdquo;</p>
+        </div>
+
+        <div class="pdv2-review-card">
+          <div class="pdv2-rc-top">
+            <span class="pdv2-rc-author">Carlos F.</span>
+            <span class="pdv2-rc-verified">&#10003; Cliente Verificado</span>
+          </div>
+          <div class="pdv2-rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="pdv2-rc-text">&ldquo;El Hoodie Oversize es una joya. Material grueso sin ser pesado, lavado f&aacute;cil y el logo GRESH es muy reconocido. Ya voy por el segundo.&rdquo;</p>
+        </div>
+
+        <div class="pdv2-review-card">
+          <div class="pdv2-rc-top">
+            <span class="pdv2-rc-author">Laura G.</span>
+            <span class="pdv2-rc-verified">&#10003; Cliente Verificada</span>
+          </div>
+          <div class="pdv2-rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="pdv2-rc-text">&ldquo;Los shorts son s&uacute;per c&oacute;modos para entrenar. Ped&iacute; talla M y quedaron perfectos para dips y muscle-ups. Entrega super r&aacute;pida.&rdquo;</p>
+        </div>
+
+        <div class="pdv2-review-card">
+          <div class="pdv2-rc-top">
+            <span class="pdv2-rc-author">Miguel P.</span>
+            <span class="pdv2-rc-verified">&#10003; Cliente Verificado</span>
+          </div>
+          <div class="pdv2-rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="pdv2-rc-text">&ldquo;Compr&eacute; la camiseta y los shorts juntos. Atenci&oacute;n personalizada por WhatsApp, llegaron en 3 d&iacute;as a Medell&iacute;n perfectamente empacados. Sin duda la mejor marca de calistenia en Colombia.&rdquo;</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-logo">GRESH <span class="accent">&times;</span> SR WORKOUT</p>
+        <p class="footer-tagline">Calistenia &amp; Street Workout &mdash; Colombia</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="ropa.html">Ropa GRESH</a></li>
+            <li><a href="paralelas.html">Equipamiento SR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Soporte</h4>
+          <ul>
+            <li><a href="https://wa.me/573107747362" target="_blank" rel="noopener noreferrer">WhatsApp GRESH</a></li>
+            <li><a href="https://wa.me/573173057685" target="_blank" rel="noopener noreferrer">WhatsApp SR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informaci&oacute;n</h4>
+          <ul>
+            <li><a href="historia.html">Mi Historia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-payments">
+      <p class="footer-payments-label">Pagos Seguros</p>
+      <div class="payment-badges">
+        <span class="pay-badge">VISA</span><span class="pay-badge">MASTERCARD</span>
+        <span class="pay-badge">PSE</span><span class="pay-badge">BANCOLOMBIA</span>
+        <span class="pay-badge">NEQUI</span><span class="pay-badge">DAVIPLATA</span>
+        <span class="pay-badge">EFECTY</span>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 GRESH &times; SR WORKOUT. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Navbar
+    const toggle = document.querySelector('.nav-toggle');
+    const drawer = document.getElementById('navDrawer');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('open'); drawer.classList.toggle('open'); });
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { toggle.classList.remove('open'); drawer.classList.remove('open'); }));
+
+    // State
+    let precioBase = 50000;
+    let nombreProducto = 'Camiseta GRESH Signature';
+    let tallaSeleccionada = 'M';
+    let descuentoAplicado = false;
+    let codigoActivo = '';
+    const WA_NUMBER = '573107747362';
+
+    function formatCOP(n) { return '$' + n.toLocaleString('es-CO') + ' COP'; }
+
+    function actualizarWhatsApp(precio) {
+      const msg = descuentoAplicado
+        ? 'Hola, quiero comprar ' + nombreProducto + ' talla ' + tallaSeleccionada + ' con el código ' + codigoActivo + '. Precio final: ' + formatCOP(precio) + '.'
+        : 'Hola, quiero comprar ' + nombreProducto + ' talla ' + tallaSeleccionada + '. Precio: ' + formatCOP(precio) + '.';
+      document.getElementById('btnComprar').href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+    }
+
+    function actualizarPrecio() {
+      const precioEl = document.getElementById('precioActual');
+      const finalEl  = document.getElementById('precioFinal');
+      if (descuentoAplicado) {
+        const nuevo = Math.round(precioBase * 0.9);
+        precioEl.classList.add('tachado');
+        precioEl.textContent = formatCOP(precioBase);
+        finalEl.style.display = 'inline';
+        finalEl.textContent = formatCOP(nuevo);
+        actualizarWhatsApp(nuevo);
+      } else {
+        precioEl.classList.remove('tachado');
+        precioEl.textContent = formatCOP(precioBase);
+        finalEl.style.display = 'none';
+        actualizarWhatsApp(precioBase);
+      }
+    }
+
+    function seleccionarVariante(card) {
+      document.querySelectorAll('.pdv2-variant').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      precioBase = parseInt(card.dataset.precio, 10);
+      nombreProducto = card.dataset.nombre;
+      document.getElementById('estiloActivo').textContent = card.querySelector('.pdv2-variant-name').textContent;
+      descuentoAplicado = false;
+      codigoActivo = '';
+      document.getElementById('inputCodigo').value = '';
+      document.getElementById('mensajeDescuento').textContent = '';
+      document.getElementById('mensajeDescuento').className = 'pdv2-discount-msg';
+      actualizarPrecio();
+    }
+
+    function seleccionarTalla(btn) {
+      document.querySelectorAll('.pdv2-size-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      tallaSeleccionada = btn.textContent;
+      document.getElementById('tallaActiva').textContent = tallaSeleccionada;
+      actualizarPrecio();
+    }
+
+    document.getElementById('btnAplicar').addEventListener('click', () => {
+      const codigo = document.getElementById('inputCodigo').value.trim().toUpperCase();
+      const msgEl  = document.getElementById('mensajeDescuento');
+      if (codigo === 'FUERZA10') {
+        descuentoAplicado = true;
+        codigoActivo = codigo;
+        const ahorro = Math.round(precioBase * 0.10);
+        msgEl.className = 'pdv2-discount-msg valid';
+        msgEl.textContent = '¡Código válido! Ahorras ' + formatCOP(ahorro) + ' (10% OFF)';
+      } else {
+        descuentoAplicado = false;
+        codigoActivo = '';
+        msgEl.className = 'pdv2-discount-msg invalid';
+        msgEl.textContent = 'Código no válido. Intenta con FUERZA10.';
+      }
+      actualizarPrecio();
+    });
+
+    document.getElementById('inputCodigo').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('btnAplicar').click(); });
+
+    function cambiarImagen(thumb, src, alt) {
+      const img = document.getElementById('imgPrincipal');
+      img.style.opacity = '0';
+      setTimeout(() => { img.src = src; img.alt = alt; img.style.opacity = '1'; }, 180);
+      document.querySelectorAll('.pdv2-thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    }
+
+    // Init
+    actualizarPrecio();
+  </script>
+</body>
+</html>
