@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paralelas SR Standard | GRESH &times; SR WORKOUT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="ropa.html">Ropa GRESH</a></li>
+        <li><a href="paralelas.html" class="active">Equipamiento SR</a></li>
+      </ul>
+      <a href="index.html" class="nav-logo">GRESH</a>
+      <ul class="nav-right">
+        <li><a href="historia.html">Mi Historia</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Abrir men&uacute;">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MEN&Uacute; M&Oacute;VIL -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="ropa.html">Ropa GRESH</a>
+    <a href="paralelas.html" class="active">Equipamiento SR WORKOUT</a>
+    <a href="historia.html">Mi Historia</a>
+  </div>
+
+  <!-- PRODUCT DETAIL -->
+  <main class="pd-hero">
+    <div class="pd-container" data-precio="250000">
+
+      <!-- CARRUSEL (izquierda) -->
+      <div class="carousel-col">
+        <div class="carousel-main-wrap">
+          <img
+            id="imagenPrincipal"
+            src="entrenamiento1.jpg"
+            alt="Paralelas SR Standard"
+            class="carousel-main-img"
+          />
+        </div>
+        <div class="carousel-thumbs">
+          <div class="carousel-thumb active" onclick="cambiarImagen(this, 'entrenamiento1.jpg', 'Paralelas SR Standard')">
+            <img src="entrenamiento1.jpg" alt="Vista 1" />
+          </div>
+          <div class="carousel-thumb" onclick="cambiarImagen(this, 'entrenamiento2.jpg', 'Vista lateral')">
+            <img src="entrenamiento2.jpg" alt="Vista 2" />
+          </div>
+          <div class="carousel-thumb" onclick="cambiarImagen(this, 'competencia.jpg', 'Vista en uso')">
+            <img src="competencia.jpg" alt="Vista 3" />
+          </div>
+          <div class="carousel-thumb" onclick="cambiarImagen(this, 'foto-perfil.jpg', 'Atleta usando el producto')">
+            <img src="foto-perfil.jpg" alt="Vista 4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- INFO (derecha) -->
+      <div class="pd-info-col">
+        <span class="pd-badge-inline">Popular</span>
+        <p class="pd-brand">SR WORKOUT &mdash; Equipamiento</p>
+        <h1 class="pd-title">Paralelas SR Standard</h1>
+        <p class="pd-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(18 rese&ntilde;as)</span></p>
+
+        <div class="pd-price-block">
+          <span class="pd-price" id="precioOriginal">$250.000 COP</span>
+          <span class="pd-price-final" id="precioFinal"></span>
+        </div>
+
+        <!-- C&Oacute;DIGO DE DESCUENTO -->
+        <div class="discount-section">
+          <span class="discount-label">C&oacute;digo de descuento</span>
+          <div class="discount-row">
+            <input
+              type="text"
+              id="inputCodigo"
+              class="discount-input"
+              placeholder="Ej: FUERZA10"
+              maxlength="12"
+            />
+            <button id="btnAplicar" class="btn-apply-discount">Aplicar</button>
+          </div>
+          <p class="discount-msg" id="mensajeDescuento"></p>
+        </div>
+
+        <!-- BOT&Oacute;N COMPRAR -->
+        <a
+          id="btnComprar"
+          href="https://wa.me/573173057685?text=Hola%2C%20quiero%20comprar%20Paralelas%20SR%20Standard.%20Precio%3A%20%24250.000."
+          class="btn-whatsapp-big"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Comprar por WhatsApp
+        </a>
+
+        <hr class="pd-divider" />
+
+        <p class="pd-desc">
+          Las Paralelas SR Standard est&aacute;n fabricadas con tuber&iacute;a de acero galvanizado de 1&frac14;&rdquo; de di&aacute;metro, soldadas artesanalmente y terminadas con pintura electrost&aacute;tica anticorrosiva. Ideales para fondos, L-sit y entrenamiento de empuje, soportan atletas de hasta 120 kg sin flexiones ni vibraciones.
+        </p>
+
+        <ul class="pd-features">
+          <li>Tuber&iacute;a de acero galvanizado 1&frac14;&rdquo;</li>
+          <li>Pintura electrost&aacute;tica anticorrosiva</li>
+          <li>Altura: 80 cm &mdash; Ancho: 50 cm (ajustable)</li>
+          <li>Capacidad de carga: hasta 120 kg</li>
+          <li>Ensamble f&aacute;cil sin herramientas especiales</li>
+          <li>Env&iacute;o a todo Colombia</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-logo">GRESH <span class="accent">&times;</span> SR WORKOUT</p>
+        <p class="footer-tagline">Calistenia &amp; Street Workout &mdash; Colombia</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="ropa.html">Ropa GRESH</a></li>
+            <li><a href="paralelas.html">Equipamiento SR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Soporte</h4>
+          <ul>
+            <li><a href="https://wa.me/573107747362" target="_blank" rel="noopener noreferrer">WhatsApp GRESH</a></li>
+            <li><a href="https://wa.me/573173057685" target="_blank" rel="noopener noreferrer">WhatsApp SR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informaci&oacute;n</h4>
+          <ul>
+            <li><a href="historia.html">Mi Historia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-payments">
+      <p class="footer-payments-label">Pagos Seguros</p>
+      <div class="payment-badges">
+        <span class="pay-badge">VISA</span>
+        <span class="pay-badge">MASTERCARD</span>
+        <span class="pay-badge">PSE</span>
+        <span class="pay-badge">BANCOLOMBIA</span>
+        <span class="pay-badge">NEQUI</span>
+        <span class="pay-badge">DAVIPLATA</span>
+        <span class="pay-badge">EFECTY</span>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2026 GRESH &times; SR WORKOUT. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Navbar hamburger
+    const toggle = document.querySelector('.nav-toggle');
+    const drawer = document.getElementById('navDrawer');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      drawer.classList.toggle('open');
+    });
+    drawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        toggle.classList.remove('open');
+        drawer.classList.remove('open');
+      });
+    });
+
+    // Carousel
+    function cambiarImagen(thumb, src, alt) {
+      const principal = document.getElementById('imagenPrincipal');
+      principal.style.opacity = '0';
+      setTimeout(() => {
+        principal.src = src;
+        principal.alt = alt;
+        principal.style.opacity = '1';
+      }, 180);
+      document.querySelectorAll('.carousel-thumb').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    }
+
+    // Discount system
+    const CODES         = { 'FUERZA10': 10 };
+    const container     = document.querySelector('.pd-container');
+    const inputCod      = document.getElementById('inputCodigo');
+    const btnAplic      = document.getElementById('btnAplicar');
+    const msgDesc       = document.getElementById('mensajeDescuento');
+    const precioOrig    = document.getElementById('precioOriginal');
+    const precioFin     = document.getElementById('precioFinal');
+    const btnComp       = document.getElementById('btnComprar');
+    const PRECIO_BASE   = parseInt(container.dataset.precio, 10);
+    const NOMBRE        = 'Paralelas SR Standard';
+    const WA_NUMBER     = '573173057685';
+
+    function formatCOP(n) {
+      return '$' + n.toLocaleString('es-CO') + ' COP';
+    }
+
+    btnAplic.addEventListener('click', () => {
+      const codigo    = inputCod.value.trim().toUpperCase();
+      const descuento = CODES[codigo];
+
+      if (descuento !== undefined) {
+        const ahorro      = Math.round(PRECIO_BASE * descuento / 100);
+        const precioNuevo = PRECIO_BASE - ahorro;
+
+        precioOrig.classList.add('tachado');
+        precioFin.style.display = 'inline';
+        precioFin.textContent   = formatCOP(precioNuevo);
+
+        msgDesc.className   = 'discount-msg valid';
+        msgDesc.textContent = '¡Código válido! Ahorras ' + formatCOP(ahorro) + ' (' + descuento + '% OFF)';
+
+        const textoWA = encodeURIComponent(
+          'Hola, quiero comprar ' + NOMBRE + ' con el código ' + codigo + '. Precio final: ' + formatCOP(precioNuevo) + '.'
+        );
+        btnComp.href = 'https://wa.me/' + WA_NUMBER + '?text=' + textoWA;
+      } else {
+        precioOrig.classList.remove('tachado');
+        precioFin.style.display = 'none';
+        msgDesc.className   = 'discount-msg invalid';
+        msgDesc.textContent = 'Código no válido. Intenta con FUERZA10.';
+
+        const textoWA = encodeURIComponent('Hola, quiero comprar ' + NOMBRE + '. Precio: ' + formatCOP(PRECIO_BASE) + '.');
+        btnComp.href = 'https://wa.me/' + WA_NUMBER + '?text=' + textoWA;
+      }
+    });
+
+    inputCod.addEventListener('keydown', e => { if (e.key === 'Enter') btnAplic.click(); });
+  </script>
+</body>
+</html>

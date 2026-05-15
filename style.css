@@ -1438,6 +1438,312 @@ body {
 }
 
 /* =========================================
+   SEO ARTICLE BLOCKS — index.html
+   ========================================= */
+.seo-article-block { margin-bottom: 2.5rem; }
+.seo-article-block:last-child { margin-bottom: 0; }
+
+/* =========================================
+   PRODUCT IMAGE LINK — ropa.html / paralelas.html
+   ========================================= */
+.product-img-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+/* =========================================
+   PRODUCT DETAIL PAGE — producto-plantilla.html
+   ========================================= */
+.pd-hero {
+  margin-top: var(--nav-height);
+  padding: 4rem 5% 6rem;
+  background: var(--white);
+}
+
+.pd-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.carousel-col {
+  position: sticky;
+  top: calc(var(--nav-height) + 2rem);
+}
+
+.carousel-main-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  margin-bottom: 0.9rem;
+  aspect-ratio: 1 / 1;
+}
+
+.carousel-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.25s ease;
+}
+
+.carousel-thumbs {
+  display: flex;
+  gap: 0.65rem;
+}
+
+.carousel-thumb {
+  width: 68px;
+  height: 68px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+  cursor: pointer;
+  background: var(--bg);
+  transition: border-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.carousel-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.carousel-thumb:hover { border-color: var(--text-muted); }
+.carousel-thumb.active { border-color: var(--neon); }
+
+.pd-info-col { padding-top: 0.5rem; }
+
+.pd-badge-inline {
+  display: inline-block;
+  background: var(--neon);
+  color: var(--text);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.pd-brand {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.pd-title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  color: var(--text);
+  line-height: 1.15;
+  margin-bottom: 0.7rem;
+}
+
+.pd-stars {
+  font-size: 0.82rem;
+  color: #F5A623;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+}
+
+.pd-stars span {
+  color: var(--text-light);
+  font-size: 0.72rem;
+  margin-left: 5px;
+}
+
+.pd-price-block {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.pd-price {
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.pd-price.tachado {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.pd-price-final {
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: var(--neon);
+  display: none;
+  text-shadow: 0 0 14px rgba(57,255,20,0.35);
+}
+
+.discount-section {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.discount-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.discount-row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.discount-input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.65rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: 4px;
+  font-family: var(--font);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text);
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.discount-input:focus { border-color: var(--neon); }
+
+.btn-apply-discount {
+  padding: 0.65rem 1.2rem;
+  background: var(--text);
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-apply-discount:hover {
+  background: #2a2a2a;
+  transform: translateY(-1px);
+}
+
+.discount-msg {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-top: 0.6rem;
+  min-height: 1.1em;
+}
+
+.discount-msg.valid  { color: #2ecc71; }
+.discount-msg.invalid { color: #e74c3c; }
+
+.btn-whatsapp-big {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 1.1rem 2rem;
+  background: var(--neon);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.25s, box-shadow 0.25s, transform 0.2s;
+  margin-bottom: 1.2rem;
+}
+
+.btn-whatsapp-big:hover {
+  background: var(--neon-hover);
+  box-shadow: 0 6px 24px rgba(57,255,20,0.45);
+  transform: translateY(-2px);
+}
+
+.pd-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
+
+.pd-desc {
+  font-size: 0.9rem;
+  color: #4A4A4A;
+  line-height: 1.85;
+  margin-bottom: 1.2rem;
+}
+
+.pd-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.pd-features li {
+  font-size: 0.85rem;
+  color: var(--text);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.pd-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--neon);
+  font-weight: 800;
+}
+
+/* =========================================
+   RESPONSIVE — TABLET (≤ 768px) additions
+   ========================================= */
+@media (max-width: 768px) {
+  .pd-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .carousel-col { position: static; }
+}
+
+/* =========================================
    RESPONSIVE — MOBILE (≤ 600px)
    ========================================= */
 @media (max-width: 600px) {
@@ -1476,4 +1782,8 @@ body {
   .footer-links { gap: 2rem; }
 
   .bio-img-block-dark--portrait { max-width: 100%; }
+
+  .carousel-thumb { width: 54px; height: 54px; }
+
+  .pd-hero { padding: 2.5rem 4% 4rem; }
 }
