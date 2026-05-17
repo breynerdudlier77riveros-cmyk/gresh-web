@@ -19,8 +19,44 @@
   <header class="site-header">
     <nav class="navbar">
       <ul class="nav-left">
-        <li><a href="ropa.html">Ropa</a></li>
-        <li><a href="paralelas.html" class="active">Equipamiento</a></li>
+        <li class="has-mega">
+          <a href="ropa.html">Ropa <span class="nav-arrow">&#9660;</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-inner">
+              <a href="producto-ropa.html" class="mega-item">
+                <div class="mega-img"><img src="entrenamiento2.jpg" alt="Camisetas GRESH" /></div>
+                <span class="mega-name">Camisetas GRESH</span>
+              </a>
+              <a href="producto-ropa.html" class="mega-item">
+                <div class="mega-img"><img src="entrenamiento1.jpg" alt="Sacos / Hoodies" /></div>
+                <span class="mega-name">Sacos / Hoodies</span>
+              </a>
+              <a href="producto-ropa.html" class="mega-item">
+                <div class="mega-img"><img src="competencia.jpg" alt="Accesorios" /></div>
+                <span class="mega-name">Accesorios</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="has-mega">
+          <a href="paralelas.html" class="active">Equipamiento <span class="nav-arrow">&#9660;</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-inner">
+              <a href="producto-paralelas.html" class="mega-item">
+                <div class="mega-img"><img src="entrenamiento1.jpg" alt="Paralelas SR Pro" /></div>
+                <span class="mega-name">Paralelas SR Pro</span>
+              </a>
+              <a href="producto-paralelas.html" class="mega-item">
+                <div class="mega-img"><img src="entrenamiento2.jpg" alt="Anillas de Madera" /></div>
+                <span class="mega-name">Anillas de Madera</span>
+              </a>
+              <a href="producto-paralelas.html" class="mega-item">
+                <div class="mega-img"><img src="foto-perfil.jpg" alt="Bandas de Resistencia" /></div>
+                <span class="mega-name">Bandas de Resistencia</span>
+              </a>
+            </div>
+          </div>
+        </li>
       </ul>
       <a href="index.html" class="nav-logo">GRESH</a>
       <ul class="nav-right">
@@ -32,80 +68,95 @@
     </nav>
   </header>
 
-  <!-- MENÚ MÓVIL -->
+  <!-- MEN&Uacute; M&Oacute;VIL -->
   <div class="nav-drawer" id="navDrawer">
-    <a href="ropa.html">Ropa</a>
-    <a href="paralelas.html" class="active">Equipamiento</a>
+    <a href="ropa.html">Ropa GRESH</a>
+    <a href="paralelas.html" class="active">Equipamiento SR</a>
     <a href="historia.html">Mi Historia</a>
   </div>
 
-  <!-- CATALOG HERO -->
-  <div class="catalog-hero">
-    <div class="catalog-hero-text">
-      <h1>Equipamiento <span class="accent">SR WORKOUT</span></h1>
-      <p>Fabricado para durar &mdash; Alto rendimiento en calistenia</p>
+  <!-- CATEGORY HEADER -->
+  <div class="cat-header">
+    <div class="cat-header-inner">
+      <div class="cat-title-row">
+        <h1 class="cat-title">EQUIPAMIENTO <span class="accent">SR WORKOUT</span></h1>
+        <span class="cat-count">3 productos</span>
+      </div>
+      <p class="cat-subtitle">Fabricado para durar &mdash; Alto rendimiento en calistenia</p>
     </div>
-    <span class="catalog-count">3 productos</span>
   </div>
 
-  <!-- PRODUCTOS -->
-  <section class="products-section">
-    <div class="products-grid">
+  <!-- FILTER BAR -->
+  <div class="cat-filters">
+    <div class="cat-filters-inner">
+      <button class="filter-btn active" data-filter="all">Todo</button>
+      <button class="filter-btn" data-filter="paralelas">Paralelas</button>
+      <button class="filter-btn" data-filter="anillas">Anillas</button>
+      <button class="filter-btn" data-filter="bandas">Bandas</button>
+    </div>
+  </div>
 
-      <!-- Producto 1 -->
-      <div class="product-card">
-        <a href="producto-paralelas.html" class="product-img-link">
-          <div class="product-img-wrap">
-            <span class="product-badge">Popular</span>
-            <img src="placeholder.jpg" alt="Paralelas SR Standard" class="product-img" onerror="this.style.display='none'" />
+  <!-- PRODUCTS GRID -->
+  <section class="cat-grid-section">
+    <div class="cat-grid">
+
+      <!-- Producto 1 — Paralelas Standard -->
+      <div class="cat-card" data-cat="paralelas">
+        <a href="producto-paralelas.html" class="cat-card-img-link">
+          <div class="cat-card-img-wrap">
+            <span class="cat-card-badge">Popular</span>
+            <img src="entrenamiento1.jpg" alt="Paralelas SR Standard" class="cat-card-img" />
           </div>
         </a>
-        <div class="product-info">
-          <p class="product-brand">SR WORKOUT &mdash; Equipamiento</p>
-          <p class="product-name"><a href="producto-paralelas.html">Paralelas SR Standard</a></p>
-          <p class="product-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(18)</span></p>
-          <p class="product-price">$250.000 COP</p>
-          <a href="producto-paralelas.html" class="btn-comprar">
-            Ver m&aacute;s &rarr;
-          </a>
+        <div class="cat-card-info">
+          <p class="cat-card-brand">SR WORKOUT &mdash; Equipamiento</p>
+          <a href="producto-paralelas.html" class="cat-card-name">Paralelas SR Standard</a>
+          <div class="cat-card-stars">
+            <span class="cat-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="cat-stars-count">(18)</span>
+          </div>
+          <p class="cat-card-price">$250.000 COP</p>
+          <a href="producto-paralelas.html" class="cat-card-btn">Ver detalles</a>
         </div>
       </div>
 
-      <!-- Producto 2 -->
-      <div class="product-card">
-        <a href="producto-paralelas.html" class="product-img-link">
-          <div class="product-img-wrap">
-            <span class="product-badge">Pro</span>
-            <img src="placeholder.jpg" alt="Paralelas SR Pro Ajustable" class="product-img" onerror="this.style.display='none'" />
+      <!-- Producto 2 — Paralelas Pro -->
+      <div class="cat-card" data-cat="paralelas">
+        <a href="producto-paralelas.html" class="cat-card-img-link">
+          <div class="cat-card-img-wrap">
+            <span class="cat-card-badge">Pro</span>
+            <img src="entrenamiento2.jpg" alt="Paralelas SR Pro Ajustable" class="cat-card-img" />
           </div>
         </a>
-        <div class="product-info">
-          <p class="product-brand">SR WORKOUT &mdash; Equipamiento</p>
-          <p class="product-name"><a href="producto-paralelas.html">Paralelas SR Pro Ajustable</a></p>
-          <p class="product-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(9)</span></p>
-          <p class="product-price">$380.000 COP</p>
-          <a href="producto-paralelas.html" class="btn-comprar">
-            Ver m&aacute;s &rarr;
-          </a>
+        <div class="cat-card-info">
+          <p class="cat-card-brand">SR WORKOUT &mdash; Equipamiento</p>
+          <a href="producto-paralelas.html" class="cat-card-name">Paralelas SR Pro Ajustable</a>
+          <div class="cat-card-stars">
+            <span class="cat-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="cat-stars-count">(9)</span>
+          </div>
+          <p class="cat-card-price">$380.000 COP</p>
+          <a href="producto-paralelas.html" class="cat-card-btn">Ver detalles</a>
         </div>
       </div>
 
-      <!-- Producto 3 -->
-      <div class="product-card">
-        <a href="producto-paralelas.html" class="product-img-link">
-          <div class="product-img-wrap">
-            <span class="product-badge">Oferta</span>
-            <img src="placeholder.jpg" alt="Kit Bandas SR Resistencia" class="product-img" onerror="this.style.display='none'" />
+      <!-- Producto 3 — Kit Bandas -->
+      <div class="cat-card" data-cat="bandas">
+        <a href="producto-paralelas.html" class="cat-card-img-link">
+          <div class="cat-card-img-wrap">
+            <span class="cat-card-badge">Oferta</span>
+            <img src="foto-perfil.jpg" alt="Kit Bandas SR Resistencia" class="cat-card-img" />
           </div>
         </a>
-        <div class="product-info">
-          <p class="product-brand">SR WORKOUT &mdash; Equipamiento</p>
-          <p class="product-name"><a href="producto-paralelas.html">Kit Bandas SR Resistencia</a></p>
-          <p class="product-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(31)</span></p>
-          <p class="product-price">$60.000 COP</p>
-          <a href="producto-paralelas.html" class="btn-comprar">
-            Ver m&aacute;s &rarr;
-          </a>
+        <div class="cat-card-info">
+          <p class="cat-card-brand">SR WORKOUT &mdash; Equipamiento</p>
+          <a href="producto-paralelas.html" class="cat-card-name">Kit Bandas SR Resistencia</a>
+          <div class="cat-card-stars">
+            <span class="cat-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="cat-stars-count">(31)</span>
+          </div>
+          <p class="cat-card-price">$60.000 COP</p>
+          <a href="producto-paralelas.html" class="cat-card-btn">Ver detalles</a>
         </div>
       </div>
 
@@ -150,6 +201,20 @@
       a.addEventListener('click', () => {
         toggle.classList.remove('open');
         drawer.classList.remove('open');
+      });
+    });
+
+    // Filtros de catálogo
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const catCards   = document.querySelectorAll('.cat-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        catCards.forEach(card => {
+          card.style.display = (f === 'all' || card.dataset.cat === f) ? '' : 'none';
+        });
       });
     });
   </script>

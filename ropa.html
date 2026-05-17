@@ -19,8 +19,44 @@
   <header class="site-header">
     <nav class="navbar">
       <ul class="nav-left">
-        <li><a href="ropa.html" class="active">Ropa</a></li>
-        <li><a href="paralelas.html">Equipamiento</a></li>
+        <li class="has-mega">
+          <a href="ropa.html" class="active">Ropa <span class="nav-arrow">&#9660;</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-inner">
+              <a href="producto-ropa.html" class="mega-item">
+                <div class="mega-img"><img src="entrenamiento2.jpg" alt="Camisetas GRESH" /></div>
+                <span class="mega-name">Camisetas GRESH</span>
+              </a>
+              <a href="producto-ropa.html" class="mega-item">
+                <div class="mega-img"><img src="entrenamiento1.jpg" alt="Sacos / Hoodies" /></div>
+                <span class="mega-name">Sacos / Hoodies</span>
+              </a>
+              <a href="producto-ropa.html" class="mega-item">
+                <div class="mega-img"><img src="competencia.jpg" alt="Accesorios" /></div>
+                <span class="mega-name">Accesorios</span>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="has-mega">
+          <a href="paralelas.html">Equipamiento <span class="nav-arrow">&#9660;</span></a>
+          <div class="mega-menu">
+            <div class="mega-menu-inner">
+              <a href="producto-paralelas.html" class="mega-item">
+                <div class="mega-img"><img src="entrenamiento1.jpg" alt="Paralelas SR Pro" /></div>
+                <span class="mega-name">Paralelas SR Pro</span>
+              </a>
+              <a href="producto-paralelas.html" class="mega-item">
+                <div class="mega-img"><img src="entrenamiento2.jpg" alt="Anillas de Madera" /></div>
+                <span class="mega-name">Anillas de Madera</span>
+              </a>
+              <a href="producto-paralelas.html" class="mega-item">
+                <div class="mega-img"><img src="foto-perfil.jpg" alt="Bandas de Resistencia" /></div>
+                <span class="mega-name">Bandas de Resistencia</span>
+              </a>
+            </div>
+          </div>
+        </li>
       </ul>
       <a href="index.html" class="nav-logo">GRESH</a>
       <ul class="nav-right">
@@ -32,78 +68,93 @@
     </nav>
   </header>
 
-  <!-- MENÚ MÓVIL -->
+  <!-- MEN&Uacute; M&Oacute;VIL -->
   <div class="nav-drawer" id="navDrawer">
-    <a href="ropa.html" class="active">Ropa</a>
-    <a href="paralelas.html">Equipamiento</a>
+    <a href="ropa.html" class="active">Ropa GRESH</a>
+    <a href="paralelas.html">Equipamiento SR</a>
     <a href="historia.html">Mi Historia</a>
   </div>
 
-  <!-- CATALOG HERO -->
-  <div class="catalog-hero">
-    <div class="catalog-hero-text">
-      <h1>Ropa <span class="accent">GRESH</span></h1>
-      <p>Viste con resiliencia &mdash; Calistenia &amp; Street Workout</p>
+  <!-- CATEGORY HEADER -->
+  <div class="cat-header">
+    <div class="cat-header-inner">
+      <div class="cat-title-row">
+        <h1 class="cat-title">ROPA <span class="accent">GRESH</span></h1>
+        <span class="cat-count">3 productos</span>
+      </div>
+      <p class="cat-subtitle">Viste con resiliencia &mdash; Calistenia &amp; Street Workout</p>
     </div>
-    <span class="catalog-count">3 productos</span>
   </div>
 
-  <!-- PRODUCTOS -->
-  <section class="products-section">
-    <div class="products-grid">
+  <!-- FILTER BAR -->
+  <div class="cat-filters">
+    <div class="cat-filters-inner">
+      <button class="filter-btn active" data-filter="all">Todo</button>
+      <button class="filter-btn" data-filter="camisetas">Camisetas</button>
+      <button class="filter-btn" data-filter="hoodies">Hoodies</button>
+      <button class="filter-btn" data-filter="shorts">Shorts</button>
+    </div>
+  </div>
 
-      <!-- Producto 1 -->
-      <div class="product-card">
-        <a href="producto-ropa.html" class="product-img-link">
-          <div class="product-img-wrap">
-            <span class="product-badge">Nuevo</span>
-            <img src="placeholder.jpg" alt="Camiseta GRESH Signature" class="product-img" onerror="this.style.display='none'" />
+  <!-- PRODUCTS GRID -->
+  <section class="cat-grid-section">
+    <div class="cat-grid">
+
+      <!-- Producto 1 — Camiseta -->
+      <div class="cat-card" data-cat="camisetas">
+        <a href="producto-ropa.html" class="cat-card-img-link">
+          <div class="cat-card-img-wrap">
+            <span class="cat-card-badge">Nuevo</span>
+            <img src="entrenamiento2.jpg" alt="Camiseta GRESH Signature" class="cat-card-img" />
           </div>
         </a>
-        <div class="product-info">
-          <p class="product-brand">GRESH &mdash; Ropa</p>
-          <p class="product-name"><a href="producto-ropa.html">Camiseta GRESH Signature</a></p>
-          <p class="product-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(24)</span></p>
-          <p class="product-price">$50.000 COP</p>
-          <a href="producto-ropa.html" class="btn-comprar">
-            Ver m&aacute;s &rarr;
-          </a>
+        <div class="cat-card-info">
+          <p class="cat-card-brand">GRESH &mdash; Ropa</p>
+          <a href="producto-ropa.html" class="cat-card-name">Camiseta GRESH Signature</a>
+          <div class="cat-card-stars">
+            <span class="cat-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="cat-stars-count">(24)</span>
+          </div>
+          <p class="cat-card-price">$50.000 COP</p>
+          <a href="producto-ropa.html" class="cat-card-btn">Ver detalles</a>
         </div>
       </div>
 
-      <!-- Producto 2 -->
-      <div class="product-card">
-        <a href="producto-ropa.html" class="product-img-link">
-          <div class="product-img-wrap">
-            <img src="placeholder.jpg" alt="Hoodie GRESH Oversize" class="product-img" onerror="this.style.display='none'" />
+      <!-- Producto 2 — Hoodie -->
+      <div class="cat-card" data-cat="hoodies">
+        <a href="producto-ropa.html" class="cat-card-img-link">
+          <div class="cat-card-img-wrap">
+            <img src="entrenamiento1.jpg" alt="Hoodie GRESH Oversize" class="cat-card-img" />
           </div>
         </a>
-        <div class="product-info">
-          <p class="product-brand">GRESH &mdash; Ropa</p>
-          <p class="product-name"><a href="producto-ropa.html">Hoodie GRESH Oversize</a></p>
-          <p class="product-stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(11)</span></p>
-          <p class="product-price">$80.000 COP</p>
-          <a href="producto-ropa.html" class="btn-comprar">
-            Ver m&aacute;s &rarr;
-          </a>
+        <div class="cat-card-info">
+          <p class="cat-card-brand">GRESH &mdash; Ropa</p>
+          <a href="producto-ropa.html" class="cat-card-name">Hoodie GRESH Oversize</a>
+          <div class="cat-card-stars">
+            <span class="cat-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="cat-stars-count">(11)</span>
+          </div>
+          <p class="cat-card-price">$80.000 COP</p>
+          <a href="producto-ropa.html" class="cat-card-btn">Ver detalles</a>
         </div>
       </div>
 
-      <!-- Producto 3 -->
-      <div class="product-card">
-        <a href="producto-ropa.html" class="product-img-link">
-          <div class="product-img-wrap">
-            <img src="placeholder.jpg" alt="Shorts GRESH Pro" class="product-img" onerror="this.style.display='none'" />
+      <!-- Producto 3 — Shorts -->
+      <div class="cat-card" data-cat="shorts">
+        <a href="producto-ropa.html" class="cat-card-img-link">
+          <div class="cat-card-img-wrap">
+            <img src="competencia.jpg" alt="Shorts GRESH Pro" class="cat-card-img" />
           </div>
         </a>
-        <div class="product-info">
-          <p class="product-brand">GRESH &mdash; Ropa</p>
-          <p class="product-name"><a href="producto-ropa.html">Shorts GRESH Pro</a></p>
-          <p class="product-stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(8)</span></p>
-          <p class="product-price">$45.000 COP</p>
-          <a href="producto-ropa.html" class="btn-comprar">
-            Ver m&aacute;s &rarr;
-          </a>
+        <div class="cat-card-info">
+          <p class="cat-card-brand">GRESH &mdash; Ropa</p>
+          <a href="producto-ropa.html" class="cat-card-name">Shorts GRESH Pro</a>
+          <div class="cat-card-stars">
+            <span class="cat-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="cat-stars-count">(8)</span>
+          </div>
+          <p class="cat-card-price">$45.000 COP</p>
+          <a href="producto-ropa.html" class="cat-card-btn">Ver detalles</a>
         </div>
       </div>
 
@@ -148,6 +199,20 @@
       a.addEventListener('click', () => {
         toggle.classList.remove('open');
         drawer.classList.remove('open');
+      });
+    });
+
+    // Filtros de catálogo
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const catCards   = document.querySelectorAll('.cat-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        catCards.forEach(card => {
+          card.style.display = (f === 'all' || card.dataset.cat === f) ? '' : 'none';
+        });
       });
     });
   </script>
