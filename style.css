@@ -2108,7 +2108,7 @@ body {
 
 .mega-menu {
   position: absolute;
-  top: calc(100% + 12px);
+  top: 100%;
   left: 50%;
   width: 240px;
   background: #FFFFFF;
@@ -2119,9 +2119,20 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(-50%) translateY(8px);
+  transform: translateX(-50%) translateY(6px);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
   z-index: 200;
+}
+
+/* Transparent bridge fills the gap between nav link and dropdown
+   so the hover state doesn't break as the cursor moves down */
+.mega-menu::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: -20px;
+  right: -20px;
+  height: 14px;
 }
 
 .has-mega:hover .mega-menu {
@@ -2495,4 +2506,97 @@ body {
   .cat-blocks { grid-template-columns: 1fr; }
   .cat-block { min-height: 300px; }
   .cat-block-title { font-size: 1.5rem; }
+}
+
+/* =========================================
+   SLIDER / CARRUSEL HORIZONTAL — CSS puro
+   ========================================= */
+.slider-seccion {
+  background: #FFFFFF;
+  padding: 2.2rem 5% 1.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.slider-seccion-title {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--neon);
+  margin: 0 0 1.1rem;
+}
+
+.slider-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider-track::-webkit-scrollbar { display: none; }
+
+.slider-card {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  min-width: 200px;
+  max-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  transition: border-color 0.22s ease, transform 0.22s ease;
+}
+
+.slider-card:hover {
+  border-color: var(--neon);
+  transform: translateY(-3px);
+}
+
+.slider-card-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.slider-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.slider-card:hover .slider-card-img img { transform: scale(1.05); }
+
+.slider-card-info {
+  background: #F9F9F9;
+  padding: 0.65rem 0.8rem;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-card-name {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #1A1A1A;
+  margin: 0;
+  line-height: 1.35;
+}
+
+@media (max-width: 768px) {
+  .slider-card { min-width: 160px; max-width: 160px; }
+  .slider-seccion { padding: 1.5rem 4% 1.2rem; }
 }
