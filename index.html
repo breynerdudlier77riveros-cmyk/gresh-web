@@ -1,64 +1,4 @@
-"Claude, vamos a construir la página de producto definitiva y más completa para este E-commerce, basándonos en referencias premium (estilo Gornation). Quiero que crees dos archivos nuevos basados en una misma estructura maestra: producto-paralelas.html y producto-ropa.html.
-
-No omitas NADA de la siguiente estructura. Ambos archivos deben tener el Header y Footer globales, y el siguiente contenido central:
-
-1. SECCIÓN PRINCIPAL: PRODUCTO Y COMPRA (Basado en captura 1)
-
-Usa CSS Grid para dividir en 2 columnas principales (pasa a 1 en móviles).
-
-Columna Izquierda (Galería): Un layout flex. A la izquierda, una tira vertical de 4-5 imágenes en miniatura. A la derecha de esa tira, la Imagen Principal grande.
-
-Columna Derecha (Información y Checkout):
-
-Migas de pan (Breadcrumbs): Ej. Inicio > Equipamiento > Paralelas Pro.
-
-Estrellas de reseña simuladas (5 estrellas) y texto '(407)'.
-
-Título grande del producto y precio destacado (con etiqueta id="precioActual" para que funcione el descuento). Texto pequeño debajo: 'excl. costo de envío'.
-
-Selector de Estilos/Tallas: Un texto 'Estilo: / Talla:' y debajo una cuadrícula con 3 o 4 recuadros seleccionables. Cada recuadro debe tener una fotito, el nombre de la variante y el precio. (Haz que al hacer clic se resalte el borde).
-
-Texto verde: '● En Stock - Envío rápido'.
-
-Sistema de Descuento: Input para código (ej. FUERZA10) y botón 'Aplicar'.
-
-Botón de Compra: Un botón gigante, color Verde Neón o Naranja fuerte, que diga 'COMPRAR POR WHATSAPP' con el enlace configurado dinámicamente.
-
-Fila de iconos de pago debajo del botón (Visa, Mastercard, PayPal).
-
-2. SECCIÓN DE DETALLES Y ACORDEONES (Basado en captura 2)
-
-Debajo de la sección principal, crea un contenedor centrado.
-
-Highlights (Destacados): Una lista limpia de 4 puntos con un icono de 'check' naranja o verde (Ej. 'Agarre óptimo', 'Construcción sólida').
-
-Acordeones (Dropdowns): Crea una estructura de acordeones (usa <details> y <summary> de HTML puro o JavaScript) para: 'DETALLES DEL PRODUCTO', 'ESPECIFICACIONES', 'GUÍA DE CUIDADO', 'CONTENIDO DEL PAQUETE', y 'ENVÍOS Y DEVOLUCIONES'. Al hacer clic, deben desplegar texto simulado.
-
-Trust Badges: Debajo de los acordeones, 3 iconos con texto alineados horizontalmente: 'Envío rápido y seguro', 'Diseñado en Colombia', 'Garantía de calidad'.
-
-3. SECCIÓN 'ELEVA TU RENDIMIENTO' (Basado en captura 3)
-
-Fondo blanco o gris muy claro. Título centrado: 'ELEVA TU RENDIMIENTO' (Diseñado para altas ambiciones).
-
-Cuadrícula (Grid) de 3 columnas. Cada columna debe tener:
-
-Una imagen grande demostrativa (usar placeholders).
-
-Título en negrita centrado (Ej. 'ESTABLE Y DURADERO', 'MÁXIMA VARIEDAD', 'AGARRE SEGURO').
-
-Párrafo pequeño explicativo debajo.
-
-4. SECCIÓN DE VIDEO Y RESEÑAS (Basado en captura 4)
-
-Video Placeholder: Un contenedor ancho con una imagen de fondo oscurecida y un icono de 'Play' grande en el centro.
-
-Voces de la Comunidad: Carrusel horizontal o grid de reseñas. A la izquierda un cuadro resumen que diga 'Excelente 4.92 promedio'. A la derecha, tarjetas individuales de clientes (con 5 estrellas, Nombre, etiqueta 'Cliente Verificado', y el texto de su experiencia).
-
-5. LÓGICA DE JAVASCRIPT:
-
-En ambos archivos incluye un script al final del body que haga funcionar: 1) El cambio de imagen principal al hacer clic en las miniaturas. 2) El resaltado activo de la caja de estilo/talla seleccionada. 3) El sistema de descuento del 10% con el código 'FUERZA10' que tache el precio viejo, ponga el nuevo, y actualice el link del botón de WhatsApp con el precio descontado.
-
-6. GIT: Asegúrate de adaptar producto-ropa.html con textos orientados a ropa (tallas, tela) y producto-paralelas.html a equipo (madera, agarre). Luego haz un git add ., un git commit -m "feat: Plantillas premium de producto (Ropa y Equipo) completas estilo Gornation" y git push."<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -219,7 +159,29 @@ En ambos archivos incluye un script al final del body que haga funcionar: 1) El 
     </div>
   </section>
 
-  <!-- C. ATLETAS GRESH &amp; SR WORKOUT -->
+  <!-- C. BLOQUES DE CATEGORÍA -->
+  <section class="cat-blocks">
+    <a href="ropa.html" class="cat-block" style="background-image:url('entrenamiento1.jpg')">
+      <div class="cat-block-overlay"></div>
+      <div class="cat-block-content">
+        <span class="cat-block-label">GRESH</span>
+        <h2 class="cat-block-title">ROPA DE ATLETAS</h2>
+        <p class="cat-block-sub">Camisetas &middot; Hoodies &middot; Accesorios</p>
+        <span class="cat-block-cta">Ver colecci&oacute;n &rarr;</span>
+      </div>
+    </a>
+    <a href="paralelas.html" class="cat-block" style="background-image:url('entrenamiento2.jpg')">
+      <div class="cat-block-overlay"></div>
+      <div class="cat-block-content">
+        <span class="cat-block-label">SR WORKOUT</span>
+        <h2 class="cat-block-title">EQUIPAMIENTO DE &Eacute;LITE</h2>
+        <p class="cat-block-sub">Paralelas &middot; Anillas &middot; Bandas</p>
+        <span class="cat-block-cta">Ver equipamiento &rarr;</span>
+      </div>
+    </a>
+  </section>
+
+  <!-- D. ATLETAS GRESH &amp; SR WORKOUT -->
   <section class="athletes">
     <div class="athletes-header">
       <h2>NUESTROS ATLETAS</h2>
